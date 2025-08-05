@@ -1,0 +1,15 @@
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\bin\Debug\net9.0\CodeChallenge.Shared.IntegrationTests.deps.json
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\bin\Debug\net9.0\CodeChallenge.Shared.IntegrationTests.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\bin\Debug\net9.0\CodeChallenge.Shared.IntegrationTests.pdb
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\bin\Debug\net9.0\CodeChallenge.ApplicationLayer.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\bin\Debug\net9.0\CodeChallenge.ApplicationLayer.pdb
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\obj\Debug\net9.0\CodeChallenge.Shared.IntegrationTests.csproj.AssemblyReference.cache
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\obj\Debug\net9.0\CodeChallenge.Shared.IntegrationTests.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\obj\Debug\net9.0\CodeChallenge.Shared.IntegrationTests.AssemblyInfoInputs.cache
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\obj\Debug\net9.0\CodeChallenge.Shared.IntegrationTests.AssemblyInfo.cs
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\obj\Debug\net9.0\CodeChallenge.Shared.IntegrationTests.csproj.CoreCompileInputs.cache
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\obj\Debug\net9.0\CodeChal.27877F6B.Up2Date
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\obj\Debug\net9.0\CodeChallenge.Shared.IntegrationTests.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\obj\Debug\net9.0\refint\CodeChallenge.Shared.IntegrationTests.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\obj\Debug\net9.0\CodeChallenge.Shared.IntegrationTests.pdb
+D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.IntegrationTests\obj\Debug\net9.0\ref\CodeChallenge.Shared.IntegrationTests.dll

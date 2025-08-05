@@ -1,0 +1,17 @@
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\bin\Debug\net9.0\CodeChallenge.InfrastructureLayer.deps.json
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\bin\Debug\net9.0\CodeChallenge.InfrastructureLayer.runtimeconfig.json
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\bin\Debug\net9.0\CodeChallenge.InfrastructureLayer.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\bin\Debug\net9.0\CodeChallenge.InfrastructureLayer.pdb
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\bin\Debug\net9.0\CodeChallenge.DomainLayer.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\bin\Debug\net9.0\CodeChallenge.DomainLayer.pdb
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\CodeChallenge.InfrastructureLayer.csproj.AssemblyReference.cache
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\CodeChallenge.InfrastructureLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\CodeChallenge.InfrastructureLayer.AssemblyInfoInputs.cache
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\CodeChallenge.InfrastructureLayer.AssemblyInfo.cs
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\CodeChallenge.InfrastructureLayer.csproj.CoreCompileInputs.cache
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\CodeChal.8692972D.Up2Date
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\CodeChallenge.InfrastructureLayer.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\refint\CodeChallenge.InfrastructureLayer.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\CodeChallenge.InfrastructureLayer.pdb
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\CodeChallenge.InfrastructureLayer.genruntimeconfig.cache
+D:\dev\CodeChallenge.Microservices\CodeChallenge.InfrastructureLayer\obj\Debug\net9.0\ref\CodeChallenge.InfrastructureLayer.dll

@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+		<PreserveCompilationContext>true</PreserveCompilationContext>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="coverlet.collector" Version="6.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="9.0.7" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.7" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+		<PackageReference Include="Polly.Core" Version="8.6.2" />
+		<PackageReference Include="xunit" Version="2.9.2" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CodeChallenge.ApplicationLayer\CodeChallenge.ApplicationLayer.csproj" />
+		<ProjectReference Include="..\CodeChallenge.Shared.IntegrationTests\CodeChallenge.Shared.IntegrationTests.csproj" />
+		<ProjectReference Include="..\Order.Service.Api.Client\Order.Service.Api.Client.csproj" />
+		<ProjectReference Include="..\Order.Service.Api\Order.Service.Api.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Xunit" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="TestData\OrdersEndpointsTests\OrdersEndpointsTests.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+</Project>

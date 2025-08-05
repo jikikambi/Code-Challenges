@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "productId": "0f8fad5b-d9cb-469f-a165-70867728950e",
+      "productName": "Gaming Laptop",
+      "productAmount": 2,
+      "productPrice": 1499.99
+    }
+  ],
+  "invoiceAddress": "123 Sample Street, 90402 Berlin",
+  "invoiceEmail": "customer@example.com",
+  "creditCardNumber": "1234-5678-9101-1121"
+}

@@ -1,0 +1,9 @@
+{
+  "CodeChallenge.ApplicationLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer",
+  "CodeChallenge.DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer",
+  "CodeChallenge.InfrastructureLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer",
+  "CodeChallenge.Shared.IntegrationTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.Shared.IntegrationTests",
+  "Order.Service.Api.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api.Client",
+  "Order.Service.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api",
+  "Order.Service.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Shared"
+}

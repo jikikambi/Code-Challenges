@@ -1,0 +1,15 @@
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\bin\Debug\net9.0\Order.Service.Shared.deps.json
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\bin\Debug\net9.0\Order.Service.Shared.dll
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\bin\Debug\net9.0\Order.Service.Shared.pdb
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\bin\Debug\net9.0\CodeChallenge.ApplicationLayer.dll
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\bin\Debug\net9.0\CodeChallenge.ApplicationLayer.pdb
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\obj\Debug\net9.0\Order.Service.Shared.csproj.AssemblyReference.cache
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\obj\Debug\net9.0\Order.Service.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\obj\Debug\net9.0\Order.Service.Shared.AssemblyInfoInputs.cache
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\obj\Debug\net9.0\Order.Service.Shared.AssemblyInfo.cs
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\obj\Debug\net9.0\Order.Service.Shared.csproj.CoreCompileInputs.cache
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\obj\Debug\net9.0\Order.Se.72F96A52.Up2Date
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\obj\Debug\net9.0\Order.Service.Shared.dll
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\obj\Debug\net9.0\refint\Order.Service.Shared.dll
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\obj\Debug\net9.0\Order.Service.Shared.pdb
+D:\dev\CodeChallenge.Microservices\Order.Service.Shared\obj\Debug\net9.0\ref\Order.Service.Shared.dll

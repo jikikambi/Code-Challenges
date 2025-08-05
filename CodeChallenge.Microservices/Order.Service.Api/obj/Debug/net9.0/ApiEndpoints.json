@@ -1,0 +1,68 @@
+[
+  {
+    "ContainingType": "Order.Service.Api.ServiceCollectionExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterEndPoints\u003Eb__2_0",
+    "RelativePath": "orders",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Order.Service.Shared.Request.CreateOrderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Order.Service.Api.ServiceCollectionExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterEndPoints\u003Eb__2_1",
+    "RelativePath": "orders/{orderNumber:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderNumber",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Order.Service.Api.ServiceCollectionExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterEndPoints\u003Eb__2_2",
+    "RelativePath": "orders/{orderNumber:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderNumber",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

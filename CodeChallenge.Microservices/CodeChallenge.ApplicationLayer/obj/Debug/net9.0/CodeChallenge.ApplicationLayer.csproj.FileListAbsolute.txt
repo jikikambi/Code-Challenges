@@ -1,0 +1,12 @@
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\bin\Debug\net9.0\CodeChallenge.ApplicationLayer.deps.json
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\bin\Debug\net9.0\CodeChallenge.ApplicationLayer.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\bin\Debug\net9.0\CodeChallenge.ApplicationLayer.pdb
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\obj\Debug\net9.0\CodeChallenge.ApplicationLayer.csproj.AssemblyReference.cache
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\obj\Debug\net9.0\CodeChallenge.ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\obj\Debug\net9.0\CodeChallenge.ApplicationLayer.AssemblyInfoInputs.cache
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\obj\Debug\net9.0\CodeChallenge.ApplicationLayer.AssemblyInfo.cs
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\obj\Debug\net9.0\CodeChallenge.ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\obj\Debug\net9.0\CodeChallenge.ApplicationLayer.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\obj\Debug\net9.0\refint\CodeChallenge.ApplicationLayer.dll
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\obj\Debug\net9.0\CodeChallenge.ApplicationLayer.pdb
+D:\dev\CodeChallenge.Microservices\CodeChallenge.ApplicationLayer\obj\Debug\net9.0\ref\CodeChallenge.ApplicationLayer.dll
