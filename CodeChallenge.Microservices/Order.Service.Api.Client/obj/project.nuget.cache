@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0GlZ+AO03w4=",
+  "dgSpecHash": "RKCQk0/hMvs=",
   "success": true,
-  "projectFilePath": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj",
+  "projectFilePath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcamb\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\jcamb\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",

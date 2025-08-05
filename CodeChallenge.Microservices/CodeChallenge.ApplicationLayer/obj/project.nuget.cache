@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ySAG5HTrHdE=",
+  "dgSpecHash": "Tdd0lfZyz5I=",
   "success": true,
-  "projectFilePath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj",
+  "projectFilePath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcamb\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\jcamb\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",

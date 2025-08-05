@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj",
+      "projectUniqueName": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj",
       "projectName": "CodeChallenge.DomainLayer",
-      "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj",
+      "projectPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj",
       "packagesPath": "C:\\Users\\jcamb\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\obj\\",
+      "outputPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -10692,11 +10692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\Order.Service.Api.IntegrationTests.csproj",
+      "projectUniqueName": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\Order.Service.Api.IntegrationTests.csproj",
       "projectName": "Order.Service.Api.IntegrationTests",
-      "projectPath": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\Order.Service.Api.IntegrationTests.csproj",
+      "projectPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\Order.Service.Api.IntegrationTests.csproj",
       "packagesPath": "C:\\Users\\jcamb\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\obj\\",
+      "outputPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10718,17 +10718,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
-              "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj"
+            "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
+              "projectPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj"
             },
-            "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.Shared.IntegrationTests\\CodeChallenge.Shared.IntegrationTests.csproj": {
-              "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.Shared.IntegrationTests\\CodeChallenge.Shared.IntegrationTests.csproj"
+            "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.Shared.IntegrationTests\\CodeChallenge.Shared.IntegrationTests.csproj": {
+              "projectPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.Shared.IntegrationTests\\CodeChallenge.Shared.IntegrationTests.csproj"
             },
-            "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj": {
-              "projectPath": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj"
+            "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj": {
+              "projectPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj"
             },
-            "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api\\Order.Service.Api.csproj": {
-              "projectPath": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api\\Order.Service.Api.csproj"
+            "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\Order.Service.Api.csproj": {
+              "projectPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\Order.Service.Api.csproj"
             }
           }
         }

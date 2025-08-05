@@ -838,11 +838,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Shared\\Order.Service.Shared.csproj",
+      "projectUniqueName": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Shared\\Order.Service.Shared.csproj",
       "projectName": "Order.Service.Shared",
-      "projectPath": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Shared\\Order.Service.Shared.csproj",
+      "projectPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Shared\\Order.Service.Shared.csproj",
       "packagesPath": "C:\\Users\\jcamb\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Shared\\obj\\",
+      "outputPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -864,8 +864,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
-              "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj"
+            "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
+              "projectPath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj"
             }
           }
         }

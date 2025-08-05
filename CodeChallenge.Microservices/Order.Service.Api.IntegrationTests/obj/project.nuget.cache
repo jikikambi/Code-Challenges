@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2uq0ebm8S0k=",
+  "dgSpecHash": "T0mrLQQWgwM=",
   "success": true,
-  "projectFilePath": "D:\\dev\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\Order.Service.Api.IntegrationTests.csproj",
+  "projectFilePath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\Order.Service.Api.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcamb\\.nuget\\packages\\autofixture\\4.18.1\\autofixture.4.18.1.nupkg.sha512",
     "C:\\Users\\jcamb\\.nuget\\packages\\autofixture.autofakeiteasy\\4.18.1\\autofixture.autofakeiteasy.4.18.1.nupkg.sha512",

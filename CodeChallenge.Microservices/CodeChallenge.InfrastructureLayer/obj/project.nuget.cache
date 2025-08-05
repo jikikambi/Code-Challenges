@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ger2cxmP7AE=",
+  "dgSpecHash": "rRC8GHkIyh4=",
   "success": true,
-  "projectFilePath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj",
+  "projectFilePath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcamb\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\jcamb\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
