@@ -142,7 +142,7 @@ This is set in the `TrackingContext` and logged with every tracking event.
 | -------------------------------| ------------------------------------------------------------------------------------------------------ |
 | DDD Architecture               | Clean separation: Domain, Application, Infrastructure, API                                             |
 | Order Processing Logic         | `CreateOrderRequest`, `OrderQueryRequest`, `DeleteOrderRequest`, proper encapsulation of domain events |
-| Two API Endpoints              | `POST /orders`, `GET /orders/{id}`, `DELETE /orders/{id}` with MediatR behind them                     |
+| Three API Endpoints              | `POST /orders`, `GET /orders/{id}`, `DELETE /orders/{id}` with MediatR behind them                     |
 | Proper Logging                 | Serilog with structured logs and log context                                                           |
 | Tracking Key Events and Errors | `TrackingContext` aggregates events, logs once per request in JSON                                     |
 | Correlation ID Support         | Per-request context passed across handlers, logs, and events                                           |
