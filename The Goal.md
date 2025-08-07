@@ -152,6 +152,9 @@ This is set in the `TrackingContext` and logged with every tracking event.
 
 ## A visual architecture diagram
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4aa26e01-678e-44bf-b979-971b8ea4cc5e" />
+
+
 
 
 
