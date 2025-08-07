@@ -1,4 +1,4 @@
-> ## Follows DDD principles, handles order processing, exposes three API endpoints, and includes proper logging to track key events and errors.
+> ## Followed DDD principles, handled order processing, exposed three API endpoints, and included proper logging to track key events and errors.
 
 
 ## 1. **Domain-Driven Design (DDD) Structure**
