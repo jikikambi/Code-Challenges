@@ -157,29 +157,29 @@ This is set in the `TrackingContext` and logged with every tracking event.
 sequenceDiagram
     participant Client
     participant API
-    participant Application
-    participant Domain
-    participant Infrastructure
+    participant ApplicationLayer
+    participant DomainLayer
+    participant InfrastructureLayer
     participant Serilog
 
     Client->>API: POST /orders (e.g.)
-    API->>Application: forward command/query\n(delegates business processing)
-    Application->>Domain: orchestrates domain operations
-    Application->>Infrastructure: uses services (e.g., EF Core)
-    Application->>Serilog: application logs, tracing
-    Domain-->>Application: domain result/event
-    Infrastructure-->>Application: data or service result
-    Application-->>API: response
+    API->>ApplicationLayer: forward command/query\n(delegates business processing)
+    ApplicationLayer->>DomainLayer: orchestrates domain operations
+    ApplicationLayer->>InfrastructureLayer: uses services (e.g., EF Core)
+    ApplicationLayer->>Serilog: application logs, tracing
+    DomainLayer-->>ApplicationLayer: domain result/event
+    InfrastructureLayer-->>ApplicationLayer: data or service result
+    ApplicationLayer-->>API: response
     API-->>Client: HTTP Response
 ```
 
 ### Notes:
 
 * **Client** initiates the request.
-* **API** just forwards to **Application**.
-* **Application** is the orchestrator, coordinating **Domain** and **Infrastructure**.
-* **Domain** is passive but central for business rules.
-* **Infrastructure** handles persistence and external concerns.
+* **API** just forwards to the **ApplicationLayer**.
+* **ApplicationLayer** is the orchestrator, coordinating **DomainLayer** and **InfrastructureLayer**.
+* **DomainLayer** is passive but central for business rules.
+* **InfrastructureLayer** handles persistence and external concerns.
 * **Serilog** logs operational events and traces.
 
 
