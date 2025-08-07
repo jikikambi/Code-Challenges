@@ -35,13 +35,26 @@ Each handler:
 **Example:**
 
 ```csharp
-var logData = new EventChain
+public Task AddEventAsync<TRequest, TInput>(TRequest request, CancellationToken cancellationToken = default)
+    where TRequest : ITrackingRequestBase<TInput>
 {
-    Id = request.CorrelationId,
-    CorrelationId = request.CorrelationId,
-    CanonicalType = request.CanonicalType,
-    Events = [request.Event]
-};
+    if (request == null) throw new ArgumentNullException(nameof(request));
+    
+    var logData = new EventChain
+    {
+        Id = request.CorrelationId,
+        CorrelationId = request.CorrelationId,
+        CanonicalType = request.CanonicalType,
+        Events = [request.Event]
+    };
+
+    using(Serilog.Context.LogContext.PushProperty("IsTracking", true))
+    {
+        _logger.Information("Tracking event: {@LogData}", logData);
+    }        
+
+    return Task.CompletedTask;
+}
 ```
 
 This ensures each service action is **auditable and traceable**.
