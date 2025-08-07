@@ -61,7 +61,7 @@ This ensures each service action is **auditable and traceable**.
 
 ## 3. **Three API Endpoints**
 
-The endpoints (via Minimal API or MVC) are:
+The endpoints (via Minimal API ) are:
 
 * `POST /orders` → creates an order
 * `GET /orders/{id}` → retrieves an order
