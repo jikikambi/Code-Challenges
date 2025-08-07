@@ -153,6 +153,34 @@ This is set in the `TrackingContext` and logged with every tracking event.
 ## A visual architecture diagram
 
 
+```mermaid
+sequenceDiagram
+    participant Client
+    participant API
+    participant Application
+    participant Domain
+    participant Infrastructure
+    participant Serilog
+
+    Client->>API: POST /orders (e.g.)
+    API->>Application: forward command/query\n(delegates business processing)
+    Application->>Domain: orchestrates domain operations
+    Application->>Infrastructure: uses services (e.g., EF Core)
+    Application->>Serilog: application logs, tracing
+    Domain-->>Application: domain result/event
+    Infrastructure-->>Application: data or service result
+    Application-->>API: response
+    API-->>Client: HTTP Response
+```
+
+### Notes:
+
+* **Client** initiates the request.
+* **API** just forwards to **Application**.
+* **Application** is the orchestrator, coordinating **Domain** and **Infrastructure**.
+* **Domain** is passive but central for business rules.
+* **Infrastructure** handles persistence and external concerns.
+* **Serilog** logs operational events and traces.
 
 
 
