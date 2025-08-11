@@ -1,0 +1,135 @@
+2025-08-11 10:59:40.598 +02:00 [INF] Resetting the database...
+2025-08-11 10:59:45.340 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-11 10:59:45.445 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-11 10:59:45.906 +02:00 [INF] Database faked with default order.
+2025-08-11 10:59:46.164 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-11 10:59:46.165 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-11 10:59:46.173 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-11 10:59:46.240 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 10:59:46.240 +02:00 [INF] Hosting environment: Development
+2025-08-11 10:59:46.240 +02:00 [INF] Content root path: D:\dev\CodeChallenge.Microservices\Order.Service.Api
+2025-08-11 11:00:11.529 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7191/orders - application/json 327
+2025-08-11 11:00:11.621 +02:00 [INF] Executing endpoint 'HTTP: POST /orders'
+2025-08-11 11:00:11.632 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-11 11:00:11.658 +02:00 [INF] Handling CreateOrderCommandRequest
+2025-08-11 11:00:12.023 +02:00 [INF] Handled CreateOrderCommandRequest
+2025-08-11 11:00:12.026 +02:00 [INF] Setting HTTP status code 201.
+2025-08-11 11:00:12.029 +02:00 [INF] Writing value of type 'CreateOrderResponse' as Json.
+2025-08-11 11:00:12.033 +02:00 [INF] Executed endpoint 'HTTP: POST /orders'
+2025-08-11 11:00:12.036 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7191/orders - 201 null application/json; charset=utf-8 512.2923ms
+2025-08-11 13:28:10.568 +02:00 [INF] Resetting the database...
+2025-08-11 13:28:14.996 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-11 13:28:15.067 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-11 13:28:15.405 +02:00 [INF] Database faked with default order.
+2025-08-11 13:28:15.483 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-11 13:28:15.484 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-11 13:28:15.486 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-11 13:28:15.526 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 13:28:15.526 +02:00 [INF] Hosting environment: Development
+2025-08-11 13:28:15.526 +02:00 [INF] Content root path: D:\dev\CodeChallenge.Microservices\Order.Service.Api
+2025-08-11 13:28:25.532 +02:00 [INF] Resetting the database...
+2025-08-11 13:28:26.358 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-11 13:28:26.432 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-11 13:28:26.703 +02:00 [INF] Database faked with default order.
+2025-08-11 13:28:26.768 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-11 13:28:26.768 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-11 13:28:26.770 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-11 13:28:26.812 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 13:28:26.812 +02:00 [INF] Hosting environment: Development
+2025-08-11 13:28:26.812 +02:00 [INF] Content root path: D:\dev\CodeChallenge.Microservices\Order.Service.Api
+2025-08-11 13:28:32.520 +02:00 [INF] Resetting the database...
+2025-08-11 13:28:33.354 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-11 13:28:33.427 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-11 13:28:33.691 +02:00 [INF] Database faked with default order.
+2025-08-11 13:28:33.745 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-11 13:28:33.746 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-11 13:28:33.748 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-11 13:28:33.788 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 13:28:33.788 +02:00 [INF] Hosting environment: Development
+2025-08-11 13:28:33.788 +02:00 [INF] Content root path: D:\dev\CodeChallenge.Microservices\Order.Service.Api
+2025-08-11 13:28:33.843 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7191/orders - application/json; charset=utf-8 null
+2025-08-11 13:28:33.862 +02:00 [INF] Executing endpoint 'HTTP: POST /orders'
+2025-08-11 13:28:33.870 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-11 13:28:33.883 +02:00 [INF] Handling CreateOrderCommandRequest
+2025-08-11 13:28:34.163 +02:00 [INF] Handled CreateOrderCommandRequest
+2025-08-11 13:28:34.165 +02:00 [INF] Setting HTTP status code 201.
+2025-08-11 13:28:34.168 +02:00 [INF] Writing value of type 'CreateOrderResponse' as Json.
+2025-08-11 13:28:34.174 +02:00 [INF] Executed endpoint 'HTTP: POST /orders'
+2025-08-11 13:28:34.176 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7191/orders - 201 null application/json; charset=utf-8 334.1088ms
+2025-08-11 13:28:34.340 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7191/orders/3bed9c73-672f-4539-b06d-c1eb9fd83fd2 - null null
+2025-08-11 13:28:34.342 +02:00 [INF] Executing endpoint 'HTTP: GET /orders/{orderNumber:guid}'
+2025-08-11 13:28:34.346 +02:00 [INF] Handling GetOrderByIdQueryRequest
+2025-08-11 13:28:34.478 +02:00 [INF] Handled GetOrderByIdQueryRequest
+2025-08-11 13:28:34.478 +02:00 [INF] Setting HTTP status code 200.
+2025-08-11 13:28:34.480 +02:00 [INF] Writing value of type 'OrderResponse' as Json.
+2025-08-11 13:28:34.482 +02:00 [INF] Executed endpoint 'HTTP: GET /orders/{orderNumber:guid}'
+2025-08-11 13:28:34.482 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7191/orders/3bed9c73-672f-4539-b06d-c1eb9fd83fd2 - 200 null application/json; charset=utf-8 141.7993ms
+2025-08-11 13:28:34.501 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7191/orders/3bed9c73-672f-4539-b06d-c1eb9fd83fd2 - null null
+2025-08-11 13:28:34.501 +02:00 [INF] Executing endpoint 'HTTP: DELETE /orders/{orderNumber:guid}'
+2025-08-11 13:28:34.505 +02:00 [INF] Handling DeleteOrderCommandRequest
+2025-08-11 13:28:34.557 +02:00 [INF] Handled DeleteOrderCommandRequest
+2025-08-11 13:28:34.558 +02:00 [INF] Setting HTTP status code 204.
+2025-08-11 13:28:34.558 +02:00 [INF] Executed endpoint 'HTTP: DELETE /orders/{orderNumber:guid}'
+2025-08-11 13:28:34.558 +02:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7191/orders/3bed9c73-672f-4539-b06d-c1eb9fd83fd2 - 204 null null 56.9881ms
+2025-08-11 13:28:34.572 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7191/orders/73fab9fb-fb84-49c4-9601-124c2c92c234 - null null
+2025-08-11 13:28:34.573 +02:00 [INF] Executing endpoint 'HTTP: GET /orders/{orderNumber:guid}'
+2025-08-11 13:28:34.574 +02:00 [INF] Handling GetOrderByIdQueryRequest
+2025-08-11 13:28:34.577 +02:00 [INF] Handled GetOrderByIdQueryRequest
+2025-08-11 13:28:34.577 +02:00 [INF] Setting HTTP status code 404.
+2025-08-11 13:28:34.577 +02:00 [INF] Executed endpoint 'HTTP: GET /orders/{orderNumber:guid}'
+2025-08-11 13:28:34.577 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7191/orders/73fab9fb-fb84-49c4-9601-124c2c92c234 - 404 0 null 5.0971ms
+2025-08-11 13:28:34.582 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7191/orders - application/json; charset=utf-8 null
+2025-08-11 13:28:34.583 +02:00 [INF] Executing endpoint 'HTTP: POST /orders'
+2025-08-11 13:28:34.584 +02:00 [INF] Handling CreateOrderCommandRequest
+2025-08-11 13:28:34.599 +02:00 [INF] Handled CreateOrderCommandRequest
+2025-08-11 13:28:34.599 +02:00 [INF] Setting HTTP status code 201.
+2025-08-11 13:28:34.599 +02:00 [INF] Writing value of type 'CreateOrderResponse' as Json.
+2025-08-11 13:28:34.599 +02:00 [INF] Executed endpoint 'HTTP: POST /orders'
+2025-08-11 13:28:34.599 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7191/orders - 201 null application/json; charset=utf-8 16.9403ms
+2025-08-11 13:28:34.601 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7191/orders/6688eb05-1754-48e6-b3cb-1c8a8f02615b - null null
+2025-08-11 13:28:34.601 +02:00 [INF] Executing endpoint 'HTTP: DELETE /orders/{orderNumber:guid}'
+2025-08-11 13:28:34.602 +02:00 [INF] Handling DeleteOrderCommandRequest
+2025-08-11 13:28:34.606 +02:00 [INF] Handled DeleteOrderCommandRequest
+2025-08-11 13:28:34.606 +02:00 [INF] Setting HTTP status code 204.
+2025-08-11 13:28:34.606 +02:00 [INF] Executed endpoint 'HTTP: DELETE /orders/{orderNumber:guid}'
+2025-08-11 13:28:34.607 +02:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7191/orders/6688eb05-1754-48e6-b3cb-1c8a8f02615b - 204 null null 5.2502ms
+2025-08-11 17:43:51.336 +02:00 [INF] Resetting the database...
+2025-08-11 17:43:53.117 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-11 17:43:53.225 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-11 17:43:53.562 +02:00 [INF] Database faked with default order.
+2025-08-11 17:43:53.652 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-11 17:43:53.652 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-11 17:43:53.655 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-11 17:43:53.706 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 17:43:53.707 +02:00 [INF] Hosting environment: Development
+2025-08-11 17:43:53.707 +02:00 [INF] Content root path: D:\dev\CodeChallenge.Microservices\Order.Service.Api
+2025-08-11 17:43:56.519 +02:00 [INF] Resetting the database...
+2025-08-11 17:43:57.436 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-11 17:43:57.513 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-11 17:43:57.834 +02:00 [INF] Database faked with default order.
+2025-08-11 17:43:57.906 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-11 17:43:57.906 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-11 17:43:57.911 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-11 17:43:57.980 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 17:43:57.980 +02:00 [INF] Hosting environment: Development
+2025-08-11 17:43:57.980 +02:00 [INF] Content root path: D:\dev\CodeChallenge.Microservices\Order.Service.Api
+2025-08-11 17:44:57.549 +02:00 [INF] Resetting the database...
+2025-08-11 17:44:58.347 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-11 17:44:58.414 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-11 17:44:58.677 +02:00 [INF] Database faked with default order.
+2025-08-11 17:44:58.739 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-11 17:44:58.739 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-11 17:44:58.742 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-11 17:44:58.792 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 17:44:58.792 +02:00 [INF] Hosting environment: Development
+2025-08-11 17:44:58.792 +02:00 [INF] Content root path: D:\dev\CodeChallenge.Microservices\Order.Service.Api
+2025-08-11 17:45:01.818 +02:00 [INF] Resetting the database...
+2025-08-11 17:45:05.861 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-11 17:45:05.945 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-11 17:45:06.323 +02:00 [INF] Database faked with default order.
+2025-08-11 17:45:06.403 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-11 17:45:06.403 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-11 17:45:06.406 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-11 17:45:06.461 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-11 17:45:06.461 +02:00 [INF] Hosting environment: Development
+2025-08-11 17:45:06.461 +02:00 [INF] Content root path: D:\dev\CodeChallenge.Microservices\Order.Service.Api

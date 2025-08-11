@@ -1,5 +1,4 @@
 ﻿using AutoFixture;
-using CodeChallenge.DomainLayer.Entities;
 using CodeChallenge.DomainLayer.ValueObjects;
 using CodeChallenge.InfrastructureLayer.Services;
 using FakeItEasy;
@@ -8,7 +7,8 @@ using Order.Service.Api.Application.Mappers;
 using Order.Service.Api.Application.RequestHandlers.Queries;
 using Order.Service.Shared.Request;
 using Order.Service.Shared.Response;
-using OrderRdm = CodeChallenge.DomainLayer.Entities.Order;
+using OrderRdm = CodeChallenge.DomainLayer.Order.Order;
+using OrderItem = CodeChallenge.DomainLayer.Order.OrderItem;
 
 namespace Order.Service.Api.UnitTests.Application.RequestHandlers.Order;
 
@@ -38,7 +38,7 @@ public class GetOrderByIdQueryRequestHandlerTests
         var creditCard = new CreditCard("1234-5678-9101-1121");
         var orderItem = new OrderItem("0f8fad5b-d9cb-469f-a165-70867728950e", "Gaming Laptop", 2, 1499.99m);
 
-        var order = new OrderRdm(address, email, creditCard, [orderItem]);
+        var order = OrderRdm.Create(address, email, creditCard, [orderItem]);
 
         var expectedResponse = _fixture.Create<OrderResponse>();
 

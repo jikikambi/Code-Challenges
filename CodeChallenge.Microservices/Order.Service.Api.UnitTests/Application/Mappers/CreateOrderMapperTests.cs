@@ -1,7 +1,7 @@
-﻿using CodeChallenge.DomainLayer.Exceptions;
+﻿using CodeChallenge.DomainLayer.Dtos;
+using CodeChallenge.DomainLayer.Exceptions;
 using FluentAssertions;
 using Order.Service.Api.Application.Mappers;
-using Order.Service.Shared.Model;
 using Order.Service.Shared.Request;
 
 namespace Order.Service.Api.UnitTests.Application.Mappers;

@@ -1,7 +1,7 @@
 ﻿using CodeChallenge.DomainLayer.ValueObjects;
 using FluentAssertions;
 using Order.Service.Api.Application.Mappers;
-using OrderRdm = CodeChallenge.DomainLayer.Entities.Order;
+using OrderRdm = CodeChallenge.DomainLayer.Order.Order;
 
 namespace Order.Service.Api.UnitTests.Application.Mappers;
 
@@ -14,7 +14,7 @@ public class OrderResponseMapperTests
         var orderId = Guid.NewGuid();
         var createdAt = DateTime.UtcNow;
 
-        var order = new OrderRdm(
+        var order = OrderRdm.Create(
             new Address("123 Sample Street, 90402 Berlin"),
             new Email("customer@example.com"),
             new CreditCard("1234-5678-9101-1121"),
@@ -23,7 +23,7 @@ public class OrderResponseMapperTests
                 new("5e8fad5b-d9cb-469f-a165-70867728950d", "Gaming Controller", 1, 29.99m)
             ]
         );
-        
+
         typeof(OrderRdm).GetProperty(nameof(OrderRdm.Id))!.SetValue(order, orderId);
         typeof(OrderRdm).GetProperty(nameof(OrderRdm.CreatedAt))!.SetValue(order, createdAt);
 

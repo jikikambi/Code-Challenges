@@ -1,5 +1,5 @@
 ﻿using CodeChallenge.ApplicationLayer;
-using Order.Service.Shared.Model;
+using CodeChallenge.DomainLayer.Dtos;
 using System.Diagnostics.CodeAnalysis;
 
 namespace Order.Service.Shared.Response;

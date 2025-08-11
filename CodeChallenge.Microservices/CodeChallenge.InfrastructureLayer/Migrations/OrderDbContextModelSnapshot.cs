@@ -22,7 +22,7 @@ namespace CodeChallenge.InfrastructureLayer.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("CodeChallenge.DomainLayer.Entities.Order", b =>
+            modelBuilder.Entity("CodeChallenge.DomainLayer.Order.Order", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -36,9 +36,37 @@ namespace CodeChallenge.InfrastructureLayer.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("CodeChallenge.DomainLayer.Entities.Order", b =>
+            modelBuilder.Entity("CodeChallenge.InfrastructureLayer.EventStore.StoredEvent", b =>
                 {
-                    b.OwnsMany("CodeChallenge.DomainLayer.Entities.OrderItem", "Items", b1 =>
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AggregateId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("EventData")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EventType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StoredEvents");
+                });
+
+            modelBuilder.Entity("CodeChallenge.DomainLayer.Order.Order", b =>
+                {
+                    b.OwnsMany("CodeChallenge.DomainLayer.Order.OrderItem", "Items", b1 =>
                         {
                             b1.Property<Guid>("OrderId")
                                 .HasColumnType("uniqueidentifier");

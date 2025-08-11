@@ -1,7 +1,7 @@
 ﻿using AutoFixture;
+using CodeChallenge.DomainLayer.Dtos;
 using CodeChallenge.Shared.UnitTests;
 using Order.Service.Api.Application.RequestHandlers.Validators;
-using Order.Service.Shared.Model;
 
 namespace Order.Service.Api.UnitTests.Application.RequestHandlers.Order;
 

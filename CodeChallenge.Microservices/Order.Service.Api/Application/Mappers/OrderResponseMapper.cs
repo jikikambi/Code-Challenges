@@ -1,6 +1,6 @@
-﻿using Order.Service.Shared.Model;
+﻿using CodeChallenge.DomainLayer.Dtos;
 using Order.Service.Shared.Response;
-using OrderRdm = CodeChallenge.DomainLayer.Entities.Order;
+using OrderRdm = CodeChallenge.DomainLayer.Order.Order;
 
 namespace Order.Service.Api.Application.Mappers;
 

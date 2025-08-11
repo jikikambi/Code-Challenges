@@ -1,4 +1,7 @@
 ﻿using CodeChallenge.ApplicationLayer;
+using CodeChallenge.DomainLayer;
+using CodeChallenge.DomainLayer.Order;
+using CodeChallenge.DomainLayer.ValueObjects;
 using CodeChallenge.InfrastructureLayer;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -9,9 +12,9 @@ using Order.Service.Api.Application.RequestHandlers.Commands.Create;
 using Order.Service.Api.Application.RequestHandlers.Commands.Delete;
 using Order.Service.Api.Application.RequestHandlers.Queries;
 using Order.Service.Shared.Request;
-using System.Diagnostics.CodeAnalysis;
-using OrderRdm = CodeChallenge.DomainLayer.Entities.Order;
 using Order.Service.Shared.Response;
+using System.Diagnostics.CodeAnalysis;
+using OrderRdm = CodeChallenge.DomainLayer.Order.Order;
 
 namespace Order.Service.Api;
 
@@ -89,6 +92,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddScoped<IOrderResponseMapper, OrderResponseMapper>();
         services.AddScoped<ICreateOrderMapper, CreateOrderMapper>();
+        services.AddScoped<IOrderItemMapper, OrderItemMapper>();
     }
 
     public static void AddRequestHandlers(this IServiceCollection services, IConfiguration configuration)
@@ -131,15 +135,20 @@ public static class ServiceCollectionExtensions
 
             if (!context.Orders.Any())
             {
-                context.Orders.Add(new OrderRdm(
-                    new("Fake Street 04"), new("fake@example.com"), new("1111-2222-3333-0000"),
+                var order = OrderRdm.Create(
+                    new Address("Fake Street 04"),
+                    new Email("fake@example.com"),
+                    new CreditCard("1111-2222-3333-0000"),
                     [
-                        new("fake01", "Fake Item", 1, 9.99m)
-                    ]));
+                        new("00000000-0000-0000-0000-000000000001", "Fake Item", 1, 9.99m)
+                    ]);
 
+                context.Orders.Add(order);
                 await context.SaveChangesAsync();
+
                 logger.LogInformation("Database faked with default order.");
             }
+
         }
         catch (Exception ex)
         {
@@ -149,5 +158,4 @@ public static class ServiceCollectionExtensions
     }
 
     public class ResetDatabase { }
-
 }

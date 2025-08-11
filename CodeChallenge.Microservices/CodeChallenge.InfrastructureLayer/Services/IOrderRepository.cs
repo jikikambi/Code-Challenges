@@ -1,4 +1,4 @@
-﻿using CodeChallenge.DomainLayer.Entities;
+﻿using CodeChallenge.DomainLayer.Order;
 
 namespace CodeChallenge.InfrastructureLayer.Services;
 

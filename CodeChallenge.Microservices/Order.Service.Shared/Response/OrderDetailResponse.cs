@@ -1,4 +1,4 @@
-﻿using Order.Service.Shared.Model;
+﻿using CodeChallenge.DomainLayer.Dtos;
 
 namespace Order.Service.Shared.Response;
 

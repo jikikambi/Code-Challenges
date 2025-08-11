@@ -21,7 +21,6 @@ public class TrackingService(Serilog.ILogger logger) : ITrackingService
         };
 
         using(Serilog.Context.LogContext.PushProperty("IsTracking", true))
-       // using (Serilog.Context.LogContext.PushProperty("CorrelationId", request.CorrelationId))
         {
             _logger.Information("Tracking event: {@LogData}", logData);
         }        
