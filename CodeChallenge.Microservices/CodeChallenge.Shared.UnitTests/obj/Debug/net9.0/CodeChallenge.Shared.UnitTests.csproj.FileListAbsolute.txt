@@ -10,16 +10,3 @@ D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9
 D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\refint\CodeChallenge.Shared.UnitTests.dll
 D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\CodeChallenge.Shared.UnitTests.pdb
 D:\dev\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\ref\CodeChallenge.Shared.UnitTests.dll
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\bin\Debug\net9.0\CodeChallenge.Shared.UnitTests.deps.json
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\bin\Debug\net9.0\CodeChallenge.Shared.UnitTests.dll
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\bin\Debug\net9.0\CodeChallenge.Shared.UnitTests.pdb
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\CodeChallenge.Shared.UnitTests.csproj.AssemblyReference.cache
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\CodeChallenge.Shared.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\CodeChallenge.Shared.UnitTests.AssemblyInfoInputs.cache
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\CodeChallenge.Shared.UnitTests.AssemblyInfo.cs
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\CodeChallenge.Shared.UnitTests.csproj.CoreCompileInputs.cache
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\CodeChallenge.Shared.UnitTests.sourcelink.json
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\CodeChallenge.Shared.UnitTests.dll
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\refint\CodeChallenge.Shared.UnitTests.dll
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\CodeChallenge.Shared.UnitTests.pdb
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.Shared.UnitTests\obj\Debug\net9.0\ref\CodeChallenge.Shared.UnitTests.dll

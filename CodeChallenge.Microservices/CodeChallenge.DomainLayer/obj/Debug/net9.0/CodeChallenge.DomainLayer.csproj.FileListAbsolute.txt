@@ -1,6 +1,7 @@
 D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\bin\Debug\net9.0\CodeChallenge.DomainLayer.deps.json
 D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\bin\Debug\net9.0\CodeChallenge.DomainLayer.dll
 D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\bin\Debug\net9.0\CodeChallenge.DomainLayer.pdb
+D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.csproj.AssemblyReference.cache
 D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
 D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.AssemblyInfoInputs.cache
 D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.AssemblyInfo.cs
@@ -9,15 +10,3 @@ D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\Co
 D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\refint\CodeChallenge.DomainLayer.dll
 D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.pdb
 D:\dev\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\ref\CodeChallenge.DomainLayer.dll
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\bin\Debug\net9.0\CodeChallenge.DomainLayer.deps.json
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\bin\Debug\net9.0\CodeChallenge.DomainLayer.dll
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\bin\Debug\net9.0\CodeChallenge.DomainLayer.pdb
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.AssemblyInfoInputs.cache
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.AssemblyInfo.cs
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.csproj.CoreCompileInputs.cache
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.sourcelink.json
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.dll
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\refint\CodeChallenge.DomainLayer.dll
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\CodeChallenge.DomainLayer.pdb
-D:\dev\challenges\Code-Challenges\CodeChallenge.Microservices\CodeChallenge.DomainLayer\obj\Debug\net9.0\ref\CodeChallenge.DomainLayer.dll

@@ -1,6 +1,7 @@
 ﻿using AutoFixture;
-using CodeChallenge.DomainLayer.Entities;
+using CodeChallenge.DomainLayer.Order;
 using CodeChallenge.InfrastructureLayer.Services;
+using CodeChallenge.InfrastructureLayer.UnitTests.Custom;
 
 namespace CodeChallenge.InfrastructureLayer.UnitTests.Services;
 
@@ -15,12 +16,16 @@ public class OrderRepositoryTests : IClassFixture<OrderDbContextFixture>
         _fixture = fixture;
         _repository = new OrderRepository(_fixture.Context);
 
-        // Clear DB
         _fixture.ResetDatabase();
 
-        // Set up AutoFixture with customizations
         _autoFixture = new Fixture();
+
+        // Register all customizations
         _autoFixture.Customize(new EmailCustomization());
+        _autoFixture.Customize(new AddressCustomization());
+        _autoFixture.Customize(new CreditCardCustomization());
+        _autoFixture.Customize(new OrderItemCustomization());
+        _autoFixture.Customize(new OrderCustomization());
     }
 
     [Fact]

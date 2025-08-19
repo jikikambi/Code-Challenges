@@ -1,4 +1,5 @@
-﻿using CodeChallenge.DomainLayer.Entities;
+﻿using CodeChallenge.DomainLayer.Order;
+using CodeChallenge.InfrastructureLayer.EventStore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CodeChallenge.InfrastructureLayer;
@@ -7,6 +8,7 @@ public class OrderDbContext(DbContextOptions<OrderDbContext> options) : DbContex
 {
     public DbSet<Order> Orders => Set<Order>();
     public DbSet<OrderItem> OrderItems => Set<OrderItem>();
+    public DbSet<StoredEvent> StoredEvents { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

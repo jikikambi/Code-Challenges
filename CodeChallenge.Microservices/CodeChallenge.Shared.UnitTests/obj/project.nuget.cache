@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DcXtg+PaV4o=",
+  "dgSpecHash": "01M+9BabGlM=",
   "success": true,
-  "projectFilePath": "D:\\dev\\challenges\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.Shared.UnitTests\\CodeChallenge.Shared.UnitTests.csproj",
+  "projectFilePath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.Shared.UnitTests\\CodeChallenge.Shared.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcamb\\.nuget\\packages\\autofixture\\4.18.1\\autofixture.4.18.1.nupkg.sha512",
     "C:\\Users\\jcamb\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

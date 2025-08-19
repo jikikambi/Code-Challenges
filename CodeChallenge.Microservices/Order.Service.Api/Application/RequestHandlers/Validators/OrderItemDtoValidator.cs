@@ -1,5 +1,5 @@
-﻿using FluentValidation;
-using Order.Service.Shared.Model;
+﻿using CodeChallenge.DomainLayer.Dtos;
+using FluentValidation;
 
 namespace Order.Service.Api.Application.RequestHandlers.Validators;
 

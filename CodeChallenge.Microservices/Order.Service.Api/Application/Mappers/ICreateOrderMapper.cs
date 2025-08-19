@@ -1,5 +1,5 @@
 ﻿using Order.Service.Shared.Request;
-using OrderRdm = CodeChallenge.DomainLayer.Entities.Order;
+using OrderRdm = CodeChallenge.DomainLayer.Order.Order;
 
 namespace Order.Service.Api.Application.Mappers;
 

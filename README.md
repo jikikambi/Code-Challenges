@@ -1,112 +1,4 @@
-# Order Processing Microservice (.NET 9, DDD, CQRS)
 
-## Overview
-
-This microservice handles **Order Processing** via a REST API, built using **.NET 9** and **Domain-Driven Design (DDD)** principles. 
-It exposes endpoints to **create**, **retrieve**, and **delete** orders. 
-The implementation follows **CQRS** using **MediatR**, and includes robust **validation**, **structured logging**, and **unit/integration** testing.
-
-## Architecture
-
-* **Domain-Driven Design (DDD)**:
-
-  * `Order` is the **aggregate root**.
-  * Includes **value objects** for CreditCard, Email and Address data.
-* **CQRS with MediatR**:
-
-  * Commands and Queries handled via `IRequestHandler`.
-  * Each request type is wrapped in strongly-typed classes.
-* **Three-layered structure**:
-
-  * `Domain`: Entities, Value Objects
-  * `Application`: Use cases, MediatR handlers
-  * `Infrastructure`: EF Core, Persistence
-
-## Tech Stack
-
-| Component     | Technology                                                 |
-| ------------- | ---------------------------------------------------------- |
-| Framework     | .NET 9 (ASP.NET Core API)                                  |
-| Architecture  | DDD + CQRS                                                 |
-| Validation    | FluentValidation                                           |
-| Database      | MSSQL (local)                                              |
-| ORM           | Entity Framework Core                                      |
-| Logging       | Serilog (`app-20250805_002.log`, `tracking-20250805.json`) |
-| Testing       | xUnit (unit + integration)                                 |
-| Documentation | Swagger (auto-generated)                                   |
-
-## API Endpoints
-
-### 1. **Create Order**
-
-* **Endpoint:** `POST /orders`
-* **Request:**
-
-```json
-{
-  "invoiceAddress": "123 Sample Street, 90402 Berlin",
-  "invoiceEmailAddress": "customer@example.com",
-  "invoiceCreditCardNumber": "1234-5678-9101-1121",
-  "items": [
-    {
-      "productId": "12345",
-      "productName": "Gaming Laptop",
-      "productAmount": 2,
-      "productPrice": 1499.99
-    }
-  ]
-}
-```
-
-* **Responses:**
-
-  * `201 Created`: Order created with unique `orderNumber`
-  * `400 Bad Request`: Validation errors (e.g., invalid email, out-of-stock)
-
-### 2. **Get Order by Order Number**
-
-* **Endpoint:** `GET /orders/{orderNumber}`
-
-* **Response:**
-
-```json
-{
-  "orderNumber": "54321",
-  "invoiceAddress": "123 Sample Street, 90402 Berlin",
-  "invoiceEmailAddress": "customer@example.com",
-  "invoiceCreditCardNumber": "1234-5678-9101-1121",
-  "items": [
-    {
-      "productId": "12345",
-      "productName": "Gaming Laptop",
-      "productAmount": 2,
-      "productPrice": 1499.99
-    }
-  ],
-  "createdAt": "2025-03-07T12:00:00Z"
-}
-```
-
-## Features
-
-* [x] **Domain-Driven Design** with aggregate root and value objects.
-* [x] **CQRS** via MediatR for separation of write/read logic.
-* [x] **FluentValidation** to validate all incoming requests.
-* [x] **Serilog** structured logging:
-
-  * General logs: `app-20250805_002.log`
-  * Tracking logs: `tracking-20250805.json` via MediatR pipeline behavior.
-* [x] **Database Reset** on startup (development mode).
-* [x] **Swagger** for live API exploration.
-
-## Testing
-
-| Type            | Description                                           |
-| --------------- | ----------------------------------------------------- |
-| **Unit Tests**  | Cover Domain, Application, Infra layers using `xUnit` |
-| **Integration** | End-to-end API and DB tests                           |
-
-> Coverage includes domain rules, validation logic, and API contract compliance.
 
 ## Running the Project
 
@@ -114,31 +6,82 @@ The implementation follows **CQRS** using **MediatR**, and includes robust **val
 dotnet run --project src/Order.Service.Api
 ```
 
-3. Swagger UI available at:
+Swagger UI:
 
 ```
 https://localhost:7191/swagger
 ```
 
-## Resetting the Database
-
-On app startup in development mode, the database is:
-
-* **Deleted**
-* **Migrated**
-* **Seeded** with default data
-
-Errors during this process are logged using Serilog.
-
 ## Logging Setup
 
-* `logs/app-20250805_002.log`: General operational logs
-* `logs/tracking-20250805.json`: Event-based logs via MediatR tracking
+* `logs/app-YYYYMMDD.log` , General operational logs
+* `logs/tracking-YYYYMMDD.json` , Event-based and correlation logs
 
 ## Architectural Notes
 
-* **DDD** helps isolate domain complexity and enforce clean boundaries.
-* **MediatR** simplifies application flow with separation of commands and queries.
-* **Value Objects** improve immutability and self-validation.
-* **TrackingBehavior** logs MediatR request lifecycle for observability.
-  
+* **DDD** ensures high cohesion, low coupling, and rich domain modeling.
+* **Event Sourcing** provides traceability and rebuild capability for aggregates.
+* **CQRS** cleanly separates command and query concerns.
+* **Value Objects** prevent invalid states.
+* **TrackingBehavior** ensures full observability of request and event chains.
+
+## A visual architecture diagram
+
+
+```mermaid
+
+sequenceDiagram
+    participant Client
+    participant API
+    participant ApplicationLayer
+    participant DomainLayer
+    participant EventStore as EventStoreRepository
+    participant InfrastructureLayer
+    participant Serilog
+
+    Client->>API: POST /orders (Command)
+    API->>ApplicationLayer: Send(CreateOrderCommand) via MediatR
+    ApplicationLayer->>DomainLayer: Call Order.Create(...) factory
+    DomainLayer->>DomainLayer: Validate value objects & invariants
+    DomainLayer->>DomainLayer: Raise OrderCreatedDomainEvent
+    DomainLayer->>EventStore: Append domain events to event store
+    DomainLayer-->>ApplicationLayer: Return AggregateRoot with events
+    ApplicationLayer->>InfrastructureLayer: Persist aggregate (EF Core)
+    ApplicationLayer->>Serilog: Log via TrackingBehavior (JSON + text)
+    InfrastructureLayer-->>ApplicationLayer: DB save result
+    ApplicationLayer-->>API: Command result (OrderNumber)
+    API-->>Client: HTTP 201 Created
+
+    Client->>API: GET /orders/{orderNumber} (Query)
+    API->>ApplicationLayer: Send(GetOrderByNumberQuery) via MediatR
+    ApplicationLayer->>InfrastructureLayer: Retrieve order read model
+    InfrastructureLayer-->>ApplicationLayer: Return read data
+    ApplicationLayer->>Serilog: Log query lifecycle
+    ApplicationLayer-->>API: Return order DTO
+    API-->>Client: HTTP 200 OK
+
+```
+
+##  Domain Event + Event Store persistence flow
+
+```mermaid
+
+sequenceDiagram
+    participant ApplicationLayer
+    participant DomainLayer
+    participant EventStore as EventStoreRepository
+    participant InfrastructureLayer
+    participant Serilog
+
+    ApplicationLayer->>DomainLayer: Execute aggregate method (e.g., Order.Create)
+    DomainLayer->>DomainLayer: Validate inputs & business rules
+    DomainLayer->>DomainLayer: Raise DomainEvent (OrderCreatedDomainEvent)
+    DomainLayer->>EventStore: AppendEvent(domainEvent, aggregateId, version)
+    EventStore->>Serilog: Log event append (correlation ID, JSON)
+    EventStore-->>DomainLayer: Confirmation of event stored
+    DomainLayer-->>ApplicationLayer: AggregateRoot + uncommitted events
+    ApplicationLayer->>InfrastructureLayer: Persist aggregate state (EF Core)
+    InfrastructureLayer->>Serilog: Log persistence action
+    InfrastructureLayer-->>ApplicationLayer: DB save result
+
+```
