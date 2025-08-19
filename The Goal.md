@@ -73,7 +73,7 @@ Each maps directly to a **MediatR command or query**, so the application layer s
 
 ### General Logging
 
-Log application-level information to `logs/app-20250805_002.log`, e.g.:
+Log application-level information to `logs/app-YYYYMMDD.log`, e.g.:
 
 ```csharp
 logger.LogInformation("Order created with ID {OrderId}", order.Id);
@@ -97,7 +97,7 @@ using(Serilog.Context.LogContext.PushProperty("IsTracking", true))
 This log is:
 
 * Written only **once per request**
-* Stored separately in `logs/tracking-.log`
+* Stored separately in `logs/tracking-YYYYMMDD.json`
 * Easily queryable by `CorrelationId`
 
 **Why it matters:**
@@ -113,19 +113,19 @@ Configured Serilog like so:
 ```csharp
 .WriteTo.Logger(lc => lc
     .Filter.ByExcluding(Matching.WithProperty<object>("IsTracking", v => v is bool b && b))
-    .WriteTo.File("logs/app-.log", rollingInterval: RollingInterval.Day))
+    .WriteTo.File("logs/app-YYYYMMDD.log", rollingInterval: RollingInterval.Day))
 
 .WriteTo.Logger(lc => lc
     .Filter.ByIncludingOnly(Matching.WithProperty<object>("IsTracking", v => v is bool b && b))
-    .WriteTo.File(path:"logs/tracking-.json",
+    .WriteTo.File(path:"logs/tracking-YYYYMMDD.json",
     rollingInterval: RollingInterval.Day,
     formatter: new Serilog.Formatting.Json.JsonFormatter(renderMessage: true)))
 ```
 
 This ensures:
 
-* Operational logs go to `app-20250805_002.log`
-* Event-level tracking goes to `tracking-20250805_002.log`
+* Operational logs go to `app-YYYYMMDD.log`
+* Event-level tracking goes to `tracking-YYYYMMDD.json`
 
 ## 6. **Correlation ID Support**
 
@@ -142,11 +142,11 @@ This is set in the `TrackingContext` and logged with every tracking event.
 | -------------------------------| ------------------------------------------------------------------------------------------------------ |
 | DDD Architecture               | Clean separation: Domain, Application, Infrastructure, API                                             |
 | Order Processing Logic         | `CreateOrderRequest`, `OrderQueryRequest`, `DeleteOrderRequest`, proper encapsulation of domain events |
-| Three API Endpoints              | `POST /orders`, `GET /orders/{id}`, `DELETE /orders/{id}` with MediatR behind them                     |
+| Three API Endpoints              | `POST /orders`, `GET /orders/{id}`, `DELETE /orders/{id}` with MediatR behind them                   |
 | Proper Logging                 | Serilog with structured logs and log context                                                           |
 | Tracking Key Events and Errors | `TrackingContext` aggregates events, logs once per request in JSON                                     |
 | Correlation ID Support         | Per-request context passed across handlers, logs, and events                                           |
-| Log Separation                 | `app-20250805_002.log` for general logs, `tracking-20250805_002.log` for event chains                  |
+| Log Separation                 | `app-YYYYMMDD.log` for general logs, `tracking-YYYYMMDD.json` for event chains                         |
 
 
 
