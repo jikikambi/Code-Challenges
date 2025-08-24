@@ -1,10 +1,10 @@
-# Order Processing Microservice (.NET 9, DDD, CQRS, Event Sourcing)
+# Order Processing Microservice (.NET 9, DDD, CQRS, Event Sourcing, Elasticsearch Tracking)
 
 ## Overview
 
 This microservice handles **Order Processing** via a REST API, built with **.NET 9** and advanced **Domain-Driven Design (DDD)** principles.
-It supports **full CQRS**, **Event Sourcing**, and **rich domain behavior** , enabling the system to store and replay events to reconstruct aggregate state.
-It includes robust **validation**, **structured logging with correlation IDs**, and both **unit** and **integration** tests.
+It supports **full CQRS**, **Event Sourcing**, and **rich domain behavior**, enabling the system to store and replay events to reconstruct aggregate state.
+It includes robust **validation**, **structured logging with correlation IDs**, **event tracking to Elasticsearch**, and both **unit** and **integration** tests.
 
 ## Architecture
 
@@ -12,7 +12,7 @@ It includes robust **validation**, **structured logging with correlation IDs**, 
 
 * `Order` is the **aggregate root**, implementing `IEventSourcedAggregate`.
 * **Value Objects** for `CreditCard`, `Email`, and `Address` ensure immutability and self-validation.
-* **Encapsulated collections** for `OrderItem`s , no direct list mutation.
+* **Encapsulated collections** for `OrderItem`s, no direct list mutation.
 * **Domain Events**:
 
   * `OrderCreatedDomainEvent`
@@ -38,9 +38,11 @@ It includes robust **validation**, **structured logging with correlation IDs**, 
 
 ### Layered Structure
 
-* **Domain** , Entities, Value Objects, Domain Events, Interfaces
-* **Application** , Command/Query handlers, DTOs, Behaviors
-* **Infrastructure** , Event Store persistence, EF Core, SQL storage
+* **Domain**, Entities, Value Objects, Domain Events, Interfaces
+* **Application**, Command/Query handlers, DTOs, Behaviors
+* **Infrastructure**, Event Store persistence, EF Core, SQL storage
+
+---
 
 ## Tech Stack
 
@@ -53,21 +55,25 @@ It includes robust **validation**, **structured logging with correlation IDs**, 
 | Database      | MSSQL (local)                                             |
 | ORM           | Entity Framework Core                                     |
 | Logging       | Serilog (structured, with correlation IDs & event chains) |
+| Elasticsearch | Docker container for event tracking                       |
 | Testing       | xUnit (unit + integration)                                |
 | Documentation | Swagger (auto-generated)                                  |
 
+---
 
 ## API Endpoints
 
 ### Create Order
 
 **POST** `/orders`
-Validates request, creates aggregate, raises `OrderCreatedDomainEvent`, persists to **Event Store**.
+Validates request, creates aggregate, raises `OrderCreatedDomainEvent`, persists to **Event Store**, and logs tracking event to Elasticsearch.
 
 ### Get Order by Order Number
 
 **GET** `/orders/{orderNumber}`
 Rebuilds the aggregate from **event history**.
+
+---
 
 ## Features
 
@@ -78,48 +84,155 @@ Rebuilds the aggregate from **event history**.
   * Domain events
   * Encapsulated collections
   * Domain services
-* [x] **CQRS** , Separate write/read paths with MediatR.
-* [x] **Event Sourcing** , Persist and replay all domain events.
-* [x] **FluentValidation** , Rich request validation.
-* [x] **Serilog Structured Logging** , Includes correlation ID & request/event lifecycle tracking.
+* [x] **CQRS**, Separate write/read paths with MediatR.
+* [x] **Event Sourcing**, Persist and replay all domain events.
+* [x] **FluentValidation**, Rich request validation.
+* [x] **Serilog Structured Logging**, Includes correlation ID & request/event lifecycle tracking.
 * [x] **Database Reset** (development mode).
-* [x] **Swagger UI** , Live API exploration.
+* [x] **Swagger UI**, Live API exploration.
+* [x] **Elasticsearch Tracking**, Docker container + test event support.
 
-## Testing
+---
 
-| Type        | Description                                                   |
-| ----------- | ------------------------------------------------------------- |
-| Unit Tests  | Cover Domain logic, Event Sourcing, and Application layer     |
-| Integration | Full-stack tests for API + Event Store + Database persistence |
+## Local Elasticsearch Setup (Docker)
 
+This microservice uses **Elasticsearch** for tracking events and request lifecycles.
 
-## Running the Project
+### 1️⃣ Pull Elasticsearch Docker image
 
-```bash
-dotnet run --project src/Order.Service.Api
+```powershell
+docker pull docker.elastic.co/elasticsearch/elasticsearch:8.10.0
 ```
 
-Swagger UI:
+### 2️⃣ Start Elasticsearch container
 
+```powershell
+docker run -d --name elasticsearch-local `
+  -p 9200:9200 -p 9300:9300 `
+  -e "discovery.type=single-node" `
+  -e "xpack.security.enabled=false" `
+  -e "ES_JAVA_OPTS=-Xms1g -Xmx1g" `
+  docker.elastic.co/elasticsearch/elasticsearch:8.10.0
 ```
-https://localhost:7191/swagger
+
+* HTTP endpoint: `http://localhost:9200`
+* Single-node cluster, no TLS/auth for development.
+
+### 3️⃣ Verify Elasticsearch Container
+
+```powershell
+docker ps
+curl http://localhost:9200
 ```
 
-## Logging Setup
+Expected response:
 
-* `logs/app-YYYYMMDD.log` , General operational logs
-* `logs/tracking-YYYYMMDD.json` , Event-based and correlation logs
+```json
+{
+  "name": "6b9a8a207eac",
+  "cluster_name": "docker-cluster",
+  "version": { "number": "8.10.0" },
+  "tagline": "You Know, for Search"
+}
+```
 
-## Architectural Notes
+### 4️⃣ (Optional) Create an Ingest Pipeline
 
-* **DDD** ensures high cohesion, low coupling, and rich domain modeling.
-* **Event Sourcing** provides traceability and rebuild capability for aggregates.
-* **CQRS** cleanly separates command and query concerns.
-* **Value Objects** prevent invalid states.
-* **TrackingBehavior** ensures full observability of request and event chains.
+```powershell
+curl -X PUT "http://localhost:9200/_ingest/pipeline/my-pipeline" -H "Content-Type: application/json" -d'
+{
+  "description": "Add processed timestamp to events",
+  "processors": [
+    { "set": { "field": "processedAt", "value": "{{_ingest.timestamp}}" } }
+  ]
+}'
+```
+
+### 5️⃣ Configure TrackingService in .NET
+
+`appsettings.Development.json`:
+
+```json
+"Tracking": {
+  "ElasticsearchUrl": "http://localhost:9200",
+  "IndexPrefix": "tracking-events",
+  "Username": "elastic", // optional
+  "Password": "changeme", // optional
+  "AutoRegisterTemplate": true,
+  "IngestPipeline": null  // optional, set if using an ingest pipeline
+},
+```
+
+---
+
+## Ready-to-Use PowerShell Script for End-to-End Testing
+
+Save this as `run-dev.ps1` in the project root:
+
+```powershell
+# run-dev.ps1
+
+# 1️⃣ Pull Elasticsearch image
+docker pull docker.elastic.co/elasticsearch/elasticsearch:8.10.0
+
+# 2️⃣ Start Elasticsearch container if not running
+$container = docker ps --filter "name=elasticsearch-local" --format "{{.Names}}"
+
+if (-not $container) {
+    Write-Host "Starting Elasticsearch container..."
+    docker run -d --name elasticsearch-local `
+      -p 9200:9200 -p 9300:9300 `
+      -e "discovery.type=single-node" `
+      -e "xpack.security.enabled=false" `
+      -e "ES_JAVA_OPTS=-Xms1g -Xmx1g" `
+      docker.elastic.co/elasticsearch/elasticsearch:8.10.0
+    Start-Sleep -Seconds 15
+} else {
+    Write-Host "Elasticsearch container already running."
+}
+
+# 3️⃣ Run .NET API
+Write-Host "Running .NET API..."
+Start-Process -NoNewWindow -FilePath "dotnet" -ArgumentList "run --project src/Order.Service.Api"
+
+Start-Sleep -Seconds 10 # give API time to start
+
+# 4️⃣ Push a test order to API
+$body = @{
+    Items = @(@{
+        ProductId = [guid]::NewGuid()
+        ProductName = "Laptop Lenovo"
+        ProductAmount = 1
+        ProductPrice = 1002.43
+    })
+    InvoiceAddress = "Fake Street 04"
+    InvoiceEmail = "fake@example.com"
+    CreditCardNumber = "1111-2222-3333-0000"
+} | ConvertTo-Json
+
+Write-Host "Sending test order..."
+Invoke-RestMethod -Uri "http://localhost:7191/orders" -Method POST -Body $body -ContentType "application/json"
+
+# 5️⃣ Query Elasticsearch to verify event
+Write-Host "Querying Elasticsearch..."
+$response = Invoke-RestMethod -Uri "http://localhost:9200/tracking-events-$(Get-Date -Format yyyy.MM.dd)/_search?pretty"
+$response.hits.hits | ForEach-Object { $_._source | ConvertTo-Json -Depth 10 }
+```
+
+### How to Run
+
+1. Open **PowerShell** in Administrator mode.
+2. Run:
+
+```powershell
+.\run-dev.ps1
+```
+
+* Starts Elasticsearch in Docker.
+* Runs the .NET API.
+* Sends a test order.
 
 ## A visual architecture diagram
-
 
 ```mermaid
 
@@ -184,10 +297,9 @@ sequenceDiagram
 End-to-end flow diagram of how the TRequest interacts with MediatR, LoggingBehavior, TrackingBehavior, and TrackingService:
 
 ```mermaid
-
 %% Define lanes
 %% Each lane represents a component or responsibility
-%% Client/API, MediatR Pipeline, TrackingService, Handler
+%% Client/API, MediatR Pipeline, TrackingService, Elasticsearch (Docker), Handler
 
 flowchart TD
     subgraph CLIENT_API [Client/API]
@@ -196,7 +308,7 @@ flowchart TD
 
     subgraph MEDIATR ["MediatR Pipeline"]
         B["MediatR.Send(TRequest)"]
-        C["IPipelineBehavior<TRequest, TResponse><br>- Behaviors executed in order"]
+        C["IPipelineBehavior<TRequest, TResponse]<br>- Behaviors executed in order"]
         D["LoggingBehavior<br>- Logs request & context"]
         E["TrackingBehavior<br>- Checks isTrackingEnabled<br>- Calls TrackingService.AddEventAsync()"]
     end
@@ -205,7 +317,11 @@ flowchart TD
         F["TrackingService.AddEventAsync<TRequest, TInput>"]
         G["Create EventChain object"]
         H["Log technical/operational info (Serilog)"]
-        I["Index event into Elasticsearch (IElasticClient)"]
+        I["Send event to Elasticsearch (Docker container)"]
+    end
+
+    subgraph ELASTIC ["Elasticsearch (Docker)"]
+        L["Index event into Elasticsearch"]
     end
 
     subgraph HANDLER ["Request Handler"]
@@ -222,7 +338,7 @@ flowchart TD
     F --> G
     F --> H
     F --> I
+    I --> L
     E --> J
     J --> K
 ```
-    
