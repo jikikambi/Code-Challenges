@@ -176,5 +176,53 @@ sequenceDiagram
     ApplicationLayer->>InfrastructureLayer: Persist aggregate state (EF Core)
     InfrastructureLayer->>Serilog: Log persistence action
     InfrastructureLayer-->>ApplicationLayer: DB save result
-
 ```
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e18b9179-021b-4109-be49-eb24648d4175" />
+
+## Flow Diagram: Tracking Request Pipeline
+End-to-end flow diagram of how the TRequest interacts with MediatR, LoggingBehavior, TrackingBehavior, and TrackingService:
+
+```mermaid
+
+%% Define lanes
+%% Each lane represents a component or responsibility
+%% Client/API, MediatR Pipeline, TrackingService, Handler
+
+flowchart TD
+    subgraph CLIENT_API [Client/API]
+        A[Send TRequest] 
+    end
+
+    subgraph MEDIATR ["MediatR Pipeline"]
+        B["MediatR.Send(TRequest)"]
+        C["IPipelineBehavior<TRequest, TResponse><br>- Behaviors executed in order"]
+        D["LoggingBehavior<br>- Logs request & context"]
+        E["TrackingBehavior<br>- Checks isTrackingEnabled<br>- Calls TrackingService.AddEventAsync()"]
+    end
+
+    subgraph TRACKING ["TrackingService"]
+        F["TrackingService.AddEventAsync<TRequest, TInput>"]
+        G["Create EventChain object"]
+        H["Log technical/operational info (Serilog)"]
+        I["Index event into Elasticsearch (IElasticClient)"]
+    end
+
+    subgraph HANDLER ["Request Handler"]
+        J["TRequest Handler<br>- Executes business logic"]
+        K["TResponse returned"]
+    end
+
+    %% Connect flow
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    F --> H
+    F --> I
+    E --> J
+    J --> K
+```
+    
