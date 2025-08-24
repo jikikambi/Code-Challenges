@@ -13,4 +13,6 @@ public class EventChain
     public CanonicalType CanonicalType { get; set; }
     public List<Event> Events { get; set; } = default!;
     public DateTime TimeStamp { get; set; } = DateTime.Now;
+    public string Environment { get; set; } =
+        System.Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production";
 }

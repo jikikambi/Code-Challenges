@@ -1,7 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\dev\\CodeChallenge.Microservices\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B42F1C5-0A1D-4816-8AC1-FF59095D7BC5}|CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj|d:\\dev\\backend\\ddd\\code-challenges\\codechallenge.microservices\\codechallenge.applicationlayer\\tracking\\services\\trackingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B42F1C5-0A1D-4816-8AC1-FF59095D7BC5}|CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj|solutionrelative:codechallenge.applicationlayer\\tracking\\services\\trackingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A0C6980-CC83-460D-8EA0-ED81C7D9BDDB}|Order.Service.Api\\Order.Service.Api.csproj|d:\\dev\\backend\\ddd\\code-challenges\\codechallenge.microservices\\order.service.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A0C6980-CC83-460D-8EA0-ED81C7D9BDDB}|Order.Service.Api\\Order.Service.Api.csproj|solutionrelative:order.service.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B42F1C5-0A1D-4816-8AC1-FF59095D7BC5}|CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj|d:\\dev\\backend\\ddd\\code-challenges\\codechallenge.microservices\\codechallenge.applicationlayer\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B42F1C5-0A1D-4816-8AC1-FF59095D7BC5}|CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj|solutionrelative:codechallenge.applicationlayer\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A0C6980-CC83-460D-8EA0-ED81C7D9BDDB}|Order.Service.Api\\Order.Service.Api.csproj|d:\\dev\\backend\\ddd\\code-challenges\\codechallenge.microservices\\order.service.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9A0C6980-CC83-460D-8EA0-ED81C7D9BDDB}|Order.Service.Api\\Order.Service.Api.csproj|solutionrelative:order.service.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B42F1C5-0A1D-4816-8AC1-FF59095D7BC5}|CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj|d:\\dev\\backend\\ddd\\code-challenges\\codechallenge.microservices\\codechallenge.applicationlayer\\tracking\\models\\trackingoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B42F1C5-0A1D-4816-8AC1-FF59095D7BC5}|CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj|solutionrelative:codechallenge.applicationlayer\\tracking\\models\\trackingoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +34,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": []
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-24T14:34:53.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TrackingOptions.cs",
+              "DocumentMoniker": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\Tracking\\Models\\TrackingOptions.cs",
+              "RelativeDocumentMoniker": "CodeChallenge.ApplicationLayer\\Tracking\\Models\\TrackingOptions.cs",
+              "ToolTip": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\Tracking\\Models\\TrackingOptions.cs",
+              "RelativeToolTip": "CodeChallenge.ApplicationLayer\\Tracking\\Models\\TrackingOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T11:53:35.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Order.Service.Api\\appsettings.json",
+              "ToolTip": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\appsettings.json",
+              "RelativeToolTip": "Order.Service.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-24T11:55:23.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "CodeChallenge.ApplicationLayer\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "CodeChallenge.ApplicationLayer\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAHgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T11:48:18.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Order.Service.Api\\Program.cs",
+              "ToolTip": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\Program.cs",
+              "RelativeToolTip": "Order.Service.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T11:47:44.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrackingService.cs",
+              "DocumentMoniker": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\Tracking\\Services\\TrackingService.cs",
+              "RelativeDocumentMoniker": "CodeChallenge.ApplicationLayer\\Tracking\\Services\\TrackingService.cs",
+              "ToolTip": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\Tracking\\Services\\TrackingService.cs",
+              "RelativeToolTip": "CodeChallenge.ApplicationLayer\\Tracking\\Services\\TrackingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T10:36:55.413Z",
+              "EditorCaption": ""
+            }
+          ]
         }
       ]
     }

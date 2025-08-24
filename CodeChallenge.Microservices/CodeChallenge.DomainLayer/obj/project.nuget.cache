@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yNJg5R35ZGQ=",
+  "dgSpecHash": "ZhlgSzi5hDg=",
   "success": true,
-  "projectFilePath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj",
+  "projectFilePath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcamb\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.8\\microsoft.extensions.configuration.9.0.8.nupkg.sha512",
     "C:\\Users\\jcamb\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.8\\microsoft.extensions.configuration.abstractions.9.0.8.nupkg.sha512",

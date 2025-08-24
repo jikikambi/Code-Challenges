@@ -54,6 +54,19 @@
           }
         }
       },
+      "Elasticsearch.Net/7.17.4": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.6.0",
+          "System.Buffers": "4.5.1",
+          "System.Diagnostics.DiagnosticSource": "6.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Elasticsearch.Net.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.17.4.0"
+          }
+        }
+      },
       "FluentValidation/12.0.0": {
         "runtime": {
           "lib/net8.0/FluentValidation.dll": {
@@ -400,6 +413,7 @@
           }
         }
       },
+      "Microsoft.CSharp/4.6.0": {},
       "Microsoft.Data.SqlClient/5.1.6": {
         "dependencies": {
           "Azure.Identity": "1.11.4",
@@ -559,7 +573,7 @@
           "Microsoft.Extensions.Caching.Abstractions": "9.0.7",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.7",
-          "Microsoft.Extensions.Options": "9.0.7",
+          "Microsoft.Extensions.Options": "9.0.8",
           "Microsoft.Extensions.Primitives": "9.0.8"
         },
         "runtime": {
@@ -587,6 +601,17 @@
         },
         "runtime": {
           "lib/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.825.36511"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/9.0.8": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.8"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.825.36511"
           }
@@ -623,7 +648,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "9.0.8",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.7",
-          "Microsoft.Extensions.Options": "9.0.7"
+          "Microsoft.Extensions.Options": "9.0.8"
         },
         "runtime": {
           "lib/net9.0/Microsoft.Extensions.Logging.dll": {
@@ -643,7 +668,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Options/9.0.7": {
+      "Microsoft.Extensions.Options/9.0.8": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
           "Microsoft.Extensions.Primitives": "9.0.8"
@@ -651,7 +676,22 @@
         "runtime": {
           "lib/net9.0/Microsoft.Extensions.Options.dll": {
             "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.725.31616"
+            "fileVersion": "9.0.825.36511"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.8": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.8",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
+          "Microsoft.Extensions.Options": "9.0.8",
+          "Microsoft.Extensions.Primitives": "9.0.8"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.825.36511"
           }
         }
       },
@@ -787,6 +827,17 @@
           }
         }
       },
+      "NEST/7.17.4": {
+        "dependencies": {
+          "Elasticsearch.Net": "7.17.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nest.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.17.4.0"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -815,6 +866,7 @@
           }
         }
       },
+      "System.Buffers/4.5.1": {},
       "System.ClientModel/1.0.0": {
         "dependencies": {
           "System.Memory.Data": "1.0.2",
@@ -1065,6 +1117,8 @@
           "FluentValidation.DependencyInjectionExtensions": "12.0.0",
           "MediatR": "13.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.8",
+          "NEST": "7.17.4",
           "Newtonsoft.Json": "13.0.3",
           "Serilog": "4.3.0",
           "Serilog.Extensions.Logging": "9.0.2"
@@ -1109,6 +1163,13 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
+    },
+    "Elasticsearch.Net/7.17.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5SIkngYAzsHhLLaj9fSmoTAZXARkKLUbvSzSdtZiNRdDxVPQjJgCT2q1FaSyTqRsWhh5zS5yhUUTL/CIKv2irA==",
+      "path": "elasticsearch.net/7.17.4",
+      "hashPath": "elasticsearch.net.7.17.4.nupkg.sha512"
     },
     "FluentValidation/12.0.0": {
       "type": "package",
@@ -1208,6 +1269,13 @@
       "path": "microsoft.codeanalysis.workspaces.msbuild/4.8.0",
       "hashPath": "microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg.sha512"
     },
+    "Microsoft.CSharp/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
+      "path": "microsoft.csharp/4.6.0",
+      "hashPath": "microsoft.csharp.4.6.0.nupkg.sha512"
+    },
     "Microsoft.Data.SqlClient/5.1.6": {
       "type": "package",
       "serviceable": true,
@@ -1299,6 +1367,13 @@
       "path": "microsoft.extensions.configuration.abstractions/9.0.8",
       "hashPath": "microsoft.extensions.configuration.abstractions.9.0.8.nupkg.sha512"
     },
+    "Microsoft.Extensions.Configuration.Binder/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0vK9DnYrYChdiH3yRZWkkp4x4LbrfkWEdBc5HOsQ8t/0CLOWKXKkkhOE8A1shlex0hGydbGrhObeypxz/QTm+w==",
+      "path": "microsoft.extensions.configuration.binder/9.0.8",
+      "hashPath": "microsoft.extensions.configuration.binder.9.0.8.nupkg.sha512"
+    },
     "Microsoft.Extensions.DependencyInjection/9.0.8": {
       "type": "package",
       "serviceable": true,
@@ -1334,12 +1409,19 @@
       "path": "microsoft.extensions.logging.abstractions/9.0.7",
       "hashPath": "microsoft.extensions.logging.abstractions.9.0.7.nupkg.sha512"
     },
-    "Microsoft.Extensions.Options/9.0.7": {
+    "Microsoft.Extensions.Options/9.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-trJnF6cRWgR5uMmHpGoHmM1wOVFdIYlELlkO9zX+RfieK0321Y55zrcs4AaEymKup7dxgEN/uJU25CAcMNQRXw==",
-      "path": "microsoft.extensions.options/9.0.7",
-      "hashPath": "microsoft.extensions.options.9.0.7.nupkg.sha512"
+      "sha512": "sha512-OmTaQ0v4gxGQkehpwWIqPoEiwsPuG/u4HUsbOFoWGx4DKET2AXzopnFe/fE608FIhzc/kcg2p8JdyMRCCUzitQ==",
+      "path": "microsoft.extensions.options/9.0.8",
+      "hashPath": "microsoft.extensions.options.9.0.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eW2s6n06x0w6w4nsX+SvpgsFYkl+Y0CttYAt6DKUXeqprX+hzNqjSfOh637fwNJBg7wRBrOIRHe49gKiTgJxzQ==",
+      "path": "microsoft.extensions.options.configurationextensions/9.0.8",
+      "hashPath": "microsoft.extensions.options.configurationextensions.9.0.8.nupkg.sha512"
     },
     "Microsoft.Extensions.Primitives/9.0.8": {
       "type": "package",
@@ -1425,6 +1507,13 @@
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
     },
+    "NEST/7.17.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FFz357NTG4P+4cnclVZ4I7bpZp0oNYZ3Dk88IzZ2NEttaxzFSI7+C7yF93y9Jg5myNwiStI+/tppwNut8M85Lw==",
+      "path": "nest/7.17.4",
+      "hashPath": "nest.7.17.4.nupkg.sha512"
+    },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
@@ -1445,6 +1534,13 @@
       "sha512": "sha512-p8kk2McN6LxuQfLyCoOkL7+nJIhVKnV1WFUxAaGTQTQk0wySbgmCHe98j+xSQvIbYHtzKXROOE2G2R0TLwBfig==",
       "path": "serilog.extensions.logging/9.0.2",
       "hashPath": "serilog.extensions.logging.9.0.2.nupkg.sha512"
+    },
+    "System.Buffers/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
     },
     "System.ClientModel/1.0.0": {
       "type": "package",

@@ -1,11 +1,15 @@
 ﻿using CodeChallenge.ApplicationLayer.Behaviors;
 using CodeChallenge.ApplicationLayer.Behaviors.Validators;
 using CodeChallenge.ApplicationLayer.Requests.Services;
+using CodeChallenge.ApplicationLayer.Tracking.Models;
 using CodeChallenge.ApplicationLayer.Tracking.Services;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using Nest;
+using Serilog;
 using System.Diagnostics.CodeAnalysis;
 
 namespace CodeChallenge.ApplicationLayer;
@@ -56,6 +60,7 @@ public static class ServiceCollectionExtensions
             services.AddApiValidationBehavior<TRequest, TResponse, TInput>(cfg);
         });
 
+        // Should be called after the assembly scanning for validators and MediatR behaviors
         services.AddTrackingService(configuration);
         return services;
     }
@@ -81,10 +86,36 @@ public static class ServiceCollectionExtensions
     /// </summary>
     public static void AddTrackingService(this IServiceCollection services, IConfiguration configuration)
     {
+        // Bind TrackingOptions from configuration
+        services.Configure<TrackingOptions>(configuration.GetSection("Tracking"));
+
+        // Register IElasticClient
+        services.AddSingleton<IElasticClient>(sp =>
+        {
+            var options = sp.GetRequiredService<IOptions<TrackingOptions>>().Value;
+
+            var settings = new ConnectionSettings(new Uri(options.ElasticsearchUrl));
+
+            if (!string.IsNullOrWhiteSpace(options.Username) && !string.IsNullOrWhiteSpace(options.Password))
+            {
+                settings = settings.BasicAuthentication(options.Username, options.Password);
+            }
+
+            if (!string.IsNullOrWhiteSpace(options.IndexPrefix))
+            {
+                settings = settings.DefaultIndex(options.IndexPrefix);
+            }
+
+            return new ElasticClient(settings);
+        });
+
+        // Register TrackingService
         services.AddSingleton<ITrackingService, TrackingService>(sp =>
         {
-            var logger = sp.GetRequiredService<Serilog.ILogger>();
-            return new TrackingService(logger);
+            var logger = sp.GetRequiredService<ILogger>();
+            var elasticClient = sp.GetRequiredService<IElasticClient>();
+            var options = sp.GetRequiredService<IOptions<TrackingOptions>>();
+            return new TrackingService(logger, elasticClient, options);
         });
     }
 }

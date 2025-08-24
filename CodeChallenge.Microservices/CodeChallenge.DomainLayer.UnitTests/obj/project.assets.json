@@ -6223,11 +6223,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer.UnitTests\\CodeChallenge.DomainLayer.UnitTests.csproj",
+      "projectUniqueName": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer.UnitTests\\CodeChallenge.DomainLayer.UnitTests.csproj",
       "projectName": "CodeChallenge.DomainLayer.UnitTests",
-      "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer.UnitTests\\CodeChallenge.DomainLayer.UnitTests.csproj",
+      "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer.UnitTests\\CodeChallenge.DomainLayer.UnitTests.csproj",
       "packagesPath": "C:\\Users\\jcamb\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer.UnitTests\\obj\\",
+      "outputPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6249,11 +6249,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj": {
-              "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj"
+            "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj": {
+              "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj"
             },
-            "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.Shared.UnitTests\\CodeChallenge.Shared.UnitTests.csproj": {
-              "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.Shared.UnitTests\\CodeChallenge.Shared.UnitTests.csproj"
+            "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.Shared.UnitTests\\CodeChallenge.Shared.UnitTests.csproj": {
+              "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.Shared.UnitTests\\CodeChallenge.Shared.UnitTests.csproj"
             }
           }
         }

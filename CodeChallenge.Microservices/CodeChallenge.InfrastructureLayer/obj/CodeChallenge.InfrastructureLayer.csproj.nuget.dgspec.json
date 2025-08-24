@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj": {}
+    "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj": {}
   },
   "projects": {
-    "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
+    "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj",
+        "projectUniqueName": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj",
         "projectName": "CodeChallenge.ApplicationLayer",
-        "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj",
+        "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj",
         "packagesPath": "C:\\Users\\jcamb\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\obj\\",
+        "outputPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj": {
-                "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj"
+              "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj": {
+                "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj"
               }
             }
           }
@@ -71,6 +71,14 @@
               "target": "Package",
               "version": "[9.0.8, )"
             },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.17.4, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -104,14 +112,14 @@
         }
       }
     },
-    "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj": {
+    "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj",
+        "projectUniqueName": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj",
         "projectName": "CodeChallenge.DomainLayer",
-        "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj",
+        "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj",
         "packagesPath": "C:\\Users\\jcamb\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\obj\\",
+        "outputPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -180,14 +188,14 @@
         }
       }
     },
-    "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj": {
+    "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj",
+        "projectUniqueName": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj",
         "projectName": "CodeChallenge.InfrastructureLayer",
-        "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj",
+        "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj",
         "packagesPath": "C:\\Users\\jcamb\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\obj\\",
+        "outputPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -209,11 +217,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
-                "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj"
+              "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
+                "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj"
               },
-              "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj": {
-                "projectPath": "D:\\dev\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj"
+              "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj": {
+                "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj"
               }
             }
           }

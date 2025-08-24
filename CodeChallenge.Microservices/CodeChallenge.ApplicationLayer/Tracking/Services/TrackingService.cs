@@ -1,17 +1,20 @@
 ﻿using CodeChallenge.ApplicationLayer.Requests.Services;
 using CodeChallenge.ApplicationLayer.Tracking.Models;
+using Microsoft.Extensions.Options;
+using Nest;
 
 namespace CodeChallenge.ApplicationLayer.Tracking.Services;
 
-public class TrackingService(Serilog.ILogger logger) : ITrackingService
+public class TrackingService(Serilog.ILogger logger,
+    IElasticClient elasticClient,
+    IOptions<TrackingOptions> options) : ITrackingService
 {
-    private readonly Serilog.ILogger _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
-    public Task AddEventAsync<TRequest, TInput>(TRequest request, CancellationToken cancellationToken = default)
+    public async Task AddEventAsync<TRequest, TInput>(TRequest request, CancellationToken cancellationToken = default)
         where TRequest : ITrackingRequestBase<TInput>
     {
         if (request == null) throw new ArgumentNullException(nameof(request));
-        
+
         var logData = new EventChain
         {
             Id = request.CorrelationId,
@@ -20,11 +23,25 @@ public class TrackingService(Serilog.ILogger logger) : ITrackingService
             Events = [request.Event]
         };
 
-        using(Serilog.Context.LogContext.PushProperty("IsTracking", true))
+        // 1) Technical/operational log (Serilog)
+        using (Serilog.Context.LogContext.PushProperty("IsTracking", true))
         {
-            _logger.Information("Tracking event: {@LogData}", logData);
-        }        
+            logger.Information("Tracking event: {@LogData}", logData);
+        }
 
-        return Task.CompletedTask;
+        // 2) Domain tracking document (Elasticsearch)
+        var indexName = $"{options.Value.IndexPrefix}-{DateTime.UtcNow:yyyy.MM.dd}";
+        var indexRequest = new IndexRequest<EventChain>(logData, indexName)
+        {
+            Pipeline = null
+        };
+
+        var response = await elasticClient.IndexAsync(indexRequest, cancellationToken);
+        if (!response.IsValid)
+        {
+            logger.Error(response.OriginalException,
+                "Failed to index tracking document to Elasticsearch (index: {Index}). ServerError: {ServerError}",
+                indexName, response.ServerError?.ToString());
+        }
     }
 }

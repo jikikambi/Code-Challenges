@@ -1,0 +1,187 @@
+2025-08-24 12:29:56.572 +02:00 [INF] Resetting the database...
+2025-08-24 12:30:03.339 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-24 12:30:03.487 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-24 12:30:04.032 +02:00 [INF] Database faked with default order.
+2025-08-24 12:30:05.077 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-24 12:30:05.078 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-24 12:30:05.087 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-24 12:30:05.272 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 12:30:05.272 +02:00 [INF] Hosting environment: Development
+2025-08-24 12:30:05.272 +02:00 [INF] Content root path: D:\dev\backend\ddd\Code-Challenges\CodeChallenge.Microservices\Order.Service.Api
+2025-08-24 12:31:46.833 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger - null null
+2025-08-24 12:31:47.122 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger - 301 0 null 299.5888ms
+2025-08-24 12:31:47.129 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/index.html - null null
+2025-08-24 12:31:47.170 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/index.html - 200 null text/html;charset=utf-8 41.4573ms
+2025-08-24 12:31:47.182 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/swagger-ui.css - null null
+2025-08-24 12:31:47.182 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/index.css - null null
+2025-08-24 12:31:47.182 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-24 12:31:47.182 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/index.js - null null
+2025-08-24 12:31:47.182 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/swagger-ui-bundle.js - null null
+2025-08-24 12:31:47.183 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-24 12:31:47.196 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/index.js - 200 null application/javascript;charset=utf-8 14.2065ms
+2025-08-24 12:31:47.196 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/_vs/browserLink - null null
+2025-08-24 12:31:47.266 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 82.5911ms
+2025-08-24 12:31:47.269 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/index.css - 200 202 text/css 86.5073ms
+2025-08-24 12:31:47.278 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 96.0571ms
+2025-08-24 12:31:47.278 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/swagger-ui.css - 200 155175 text/css 96.4424ms
+2025-08-24 12:31:47.284 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/swagger-ui-bundle.js - 200 1485750 text/javascript 101.8724ms
+2025-08-24 12:31:47.305 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.9ms
+2025-08-24 12:31:47.414 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/v1/swagger.json - null null
+2025-08-24 12:31:47.423 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.153ms
+2025-08-24 12:31:47.428 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/favicon-32x32.png - null null
+2025-08-24 12:31:47.428 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/favicon-32x32.png - 200 628 image/png 0.7328ms
+2025-08-24 15:03:01.849 +02:00 [INF] Resetting the database...
+2025-08-24 15:03:03.827 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-24 15:03:03.929 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-24 15:03:04.299 +02:00 [INF] Database faked with default order.
+2025-08-24 15:03:04.595 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-24 15:03:04.596 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-24 15:03:04.600 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-24 15:03:04.671 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 15:03:04.671 +02:00 [INF] Hosting environment: Development
+2025-08-24 15:03:04.671 +02:00 [INF] Content root path: D:\dev\backend\ddd\Code-Challenges\CodeChallenge.Microservices\Order.Service.Api
+2025-08-24 15:03:25.773 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/index.html - null null
+2025-08-24 15:03:25.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/index.html - 200 null text/html;charset=utf-8 222.6885ms
+2025-08-24 15:03:25.999 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-24 15:03:25.999 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/_vs/browserLink - null null
+2025-08-24 15:03:26.096 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 96.8575ms
+2025-08-24 15:03:26.112 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/_vs/browserLink - 200 null text/javascript; charset=UTF-8 113.2118ms
+2025-08-24 15:03:26.155 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/swagger/v1/swagger.json - null null
+2025-08-24 15:03:26.169 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.7031ms
+2025-08-24 15:04:59.886 +02:00 [INF] Resetting the database...
+2025-08-24 15:05:01.210 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-24 15:05:01.331 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-24 15:05:01.752 +02:00 [INF] Database faked with default order.
+2025-08-24 15:05:02.032 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-24 15:05:02.033 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-24 15:05:02.037 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-24 15:05:02.096 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 15:05:02.096 +02:00 [INF] Hosting environment: Development
+2025-08-24 15:05:02.096 +02:00 [INF] Content root path: D:\dev\backend\ddd\Code-Challenges\CodeChallenge.Microservices\Order.Service.Api
+2025-08-24 15:08:29.191 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/orders/AC8D84ED-6C40-4130-AF47-62BD68CE44DD - null null
+2025-08-24 15:08:29.383 +02:00 [INF] Executing endpoint 'HTTP: GET /orders/{orderNumber:guid}'
+2025-08-24 15:08:29.390 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-24 15:08:29.605 +02:00 [INF] Handling GetOrderByIdQueryRequest
+2025-08-24 15:08:42.874 +02:00 [ERR] Failed to index tracking document to Elasticsearch (index: tracking-events-2025.08.24). ServerError: null
+Elasticsearch.Net.ElasticsearchClientException: The client is unable to verify that the server is Elasticsearch due to an unsuccessful product check call. Some functionality may not be compatible if the server is running an unsupported product. Call: Status code unknown from: GET /
+ ---> Elasticsearch.Net.PipelineException: The client is unable to verify that the server is Elasticsearch due to an unsuccessful product check call. Some functionality may not be compatible if the server is running an unsupported product.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Elasticsearch.Net.HttpConnection.RequestAsync[TResponse](RequestData requestData, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Elasticsearch.Net.RequestPipeline.ThrowIfTransientProductCheckFailure()
+   at Elasticsearch.Net.RequestPipeline.PingAsync(Node node, CancellationToken cancellationToken)
+   at Elasticsearch.Net.Transport`1.PingAsync(IRequestPipeline pipeline, Node node, CancellationToken cancellationToken)
+   at Elasticsearch.Net.Transport`1.RequestAsync[TResponse](HttpMethod method, String path, CancellationToken cancellationToken, PostData data, IRequestParameters requestParameters)
+   --- End of inner exception stack trace ---
+2025-08-24 15:08:42.877 +02:00 [INF] Handled GetOrderByIdQueryRequest
+2025-08-24 15:08:42.882 +02:00 [INF] Setting HTTP status code 200.
+2025-08-24 15:08:42.894 +02:00 [INF] Writing value of type 'OrderResponse' as Json.
+2025-08-24 15:08:42.902 +02:00 [INF] Executed endpoint 'HTTP: GET /orders/{orderNumber:guid}'
+2025-08-24 15:08:42.908 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/orders/AC8D84ED-6C40-4130-AF47-62BD68CE44DD - 200 null application/json; charset=utf-8 13728.4876ms
+2025-08-24 15:14:50.412 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7191/orders - application/json 306
+2025-08-24 15:14:50.449 +02:00 [INF] Executing endpoint 'HTTP: POST /orders'
+2025-08-24 15:14:50.488 +02:00 [INF] Handling CreateOrderCommandRequest
+2025-08-24 15:14:54.298 +02:00 [ERR] Failed to index tracking document to Elasticsearch (index: tracking-events-2025.08.24). ServerError: null
+Elasticsearch.Net.ElasticsearchClientException: The client is unable to verify that the server is Elasticsearch due to an unsuccessful product check call. Some functionality may not be compatible if the server is running an unsupported product. Call: Status code unknown from: GET /
+ ---> Elasticsearch.Net.PipelineException: The client is unable to verify that the server is Elasticsearch due to an unsuccessful product check call. Some functionality may not be compatible if the server is running an unsupported product.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Elasticsearch.Net.HttpConnection.RequestAsync[TResponse](RequestData requestData, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Elasticsearch.Net.RequestPipeline.ThrowIfTransientProductCheckFailure()
+   at Elasticsearch.Net.RequestPipeline.PingAsync(Node node, CancellationToken cancellationToken)
+   at Elasticsearch.Net.Transport`1.PingAsync(IRequestPipeline pipeline, Node node, CancellationToken cancellationToken)
+   at Elasticsearch.Net.Transport`1.RequestAsync[TResponse](HttpMethod method, String path, CancellationToken cancellationToken, PostData data, IRequestParameters requestParameters)
+   --- End of inner exception stack trace ---
+2025-08-24 15:14:54.299 +02:00 [INF] Handled CreateOrderCommandRequest
+2025-08-24 15:14:54.300 +02:00 [INF] Setting HTTP status code 201.
+2025-08-24 15:14:54.301 +02:00 [INF] Writing value of type 'CreateOrderResponse' as Json.
+2025-08-24 15:14:54.302 +02:00 [INF] Executed endpoint 'HTTP: POST /orders'
+2025-08-24 15:14:54.302 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7191/orders - 201 null application/json; charset=utf-8 3890.7671ms
+2025-08-24 15:31:11.427 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7191/orders - application/json 306
+2025-08-24 15:31:11.468 +02:00 [INF] Executing endpoint 'HTTP: POST /orders'
+2025-08-24 15:31:11.472 +02:00 [INF] Handling CreateOrderCommandRequest
+2025-08-24 15:34:52.550 +02:00 [ERR] Failed to index tracking document to Elasticsearch (index: tracking-events-2025.08.24). ServerError: null
+Elasticsearch.Net.ElasticsearchClientException: The client is unable to verify that the server is Elasticsearch due to an unsuccessful product check call. Some functionality may not be compatible if the server is running an unsupported product. Call: Status code unknown from: GET /
+ ---> Elasticsearch.Net.PipelineException: The client is unable to verify that the server is Elasticsearch due to an unsuccessful product check call. Some functionality may not be compatible if the server is running an unsupported product.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Elasticsearch.Net.HttpConnection.RequestAsync[TResponse](RequestData requestData, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Elasticsearch.Net.RequestPipeline.ThrowIfTransientProductCheckFailure()
+   at Elasticsearch.Net.RequestPipeline.PingAsync(Node node, CancellationToken cancellationToken)
+   at Elasticsearch.Net.Transport`1.PingAsync(IRequestPipeline pipeline, Node node, CancellationToken cancellationToken)
+   at Elasticsearch.Net.Transport`1.RequestAsync[TResponse](HttpMethod method, String path, CancellationToken cancellationToken, PostData data, IRequestParameters requestParameters)
+   --- End of inner exception stack trace ---
+2025-08-24 15:34:52.579 +02:00 [INF] Handled CreateOrderCommandRequest
+2025-08-24 15:34:52.580 +02:00 [INF] Setting HTTP status code 201.
+2025-08-24 15:34:52.580 +02:00 [INF] Writing value of type 'CreateOrderResponse' as Json.
+2025-08-24 15:34:52.580 +02:00 [INF] Executed endpoint 'HTTP: POST /orders'
+2025-08-24 15:34:52.580 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7191/orders - 201 null application/json; charset=utf-8 221153.272ms
+2025-08-24 15:36:23.465 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7191/orders - application/json 306
+2025-08-24 15:36:23.465 +02:00 [INF] Executing endpoint 'HTTP: POST /orders'
+2025-08-24 15:36:23.472 +02:00 [INF] Handling CreateOrderCommandRequest
+2025-08-24 15:39:28.281 +02:00 [ERR] Failed to index tracking document to Elasticsearch (index: tracking-events-2025.08.24). ServerError: ServerError: 400Type: illegal_argument_exception Reason: "pipeline with id [my-pipeline] does not exist"
+Elasticsearch.Net.ElasticsearchClientException: Request failed to execute. Call: Status code 400 from: PUT /tracking-events-2025.08.24/_doc/cf1413e3-2adb-4f63-bac2-1a3495da67a3?pipeline=my-pipeline. ServerError: Type: illegal_argument_exception Reason: "pipeline with id [my-pipeline] does not exist"
+2025-08-24 15:39:28.281 +02:00 [INF] Handled CreateOrderCommandRequest
+2025-08-24 15:39:28.281 +02:00 [INF] Setting HTTP status code 201.
+2025-08-24 15:39:28.281 +02:00 [INF] Writing value of type 'CreateOrderResponse' as Json.
+2025-08-24 15:39:28.281 +02:00 [INF] Executed endpoint 'HTTP: POST /orders'
+2025-08-24 15:39:28.281 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7191/orders - 201 null application/json; charset=utf-8 184816.6258ms
+2025-08-24 15:42:24.498 +02:00 [INF] Resetting the database...
+2025-08-24 15:42:28.667 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-24 15:42:28.816 +02:00 [INF] Applying migration '20250810141007_InitialCreate'.
+2025-08-24 15:42:29.209 +02:00 [INF] Database faked with default order.
+2025-08-24 15:42:29.456 +02:00 [INF] Now listening on: https://localhost:7191
+2025-08-24 15:42:29.457 +02:00 [INF] Now listening on: http://localhost:5208
+2025-08-24 15:42:29.461 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-08-24 15:42:29.642 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 15:42:29.643 +02:00 [INF] Hosting environment: Development
+2025-08-24 15:42:29.643 +02:00 [INF] Content root path: D:\dev\backend\ddd\Code-Challenges\CodeChallenge.Microservices\Order.Service.Api
+2025-08-24 15:42:38.701 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7191/orders - application/json 306
+2025-08-24 15:42:38.767 +02:00 [INF] Executing endpoint 'HTTP: POST /orders'
+2025-08-24 15:42:38.782 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-24 15:42:38.855 +02:00 [INF] Handling CreateOrderCommandRequest
+2025-08-24 15:43:37.394 +02:00 [INF] Handled CreateOrderCommandRequest
+2025-08-24 15:43:37.402 +02:00 [INF] Setting HTTP status code 201.
+2025-08-24 15:43:37.406 +02:00 [INF] Writing value of type 'CreateOrderResponse' as Json.
+2025-08-24 15:43:37.410 +02:00 [INF] Executed endpoint 'HTTP: POST /orders'
+2025-08-24 15:43:37.416 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7191/orders - 201 null application/json; charset=utf-8 58723.7683ms
+2025-08-24 15:51:33.363 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7191/orders - application/json 304
+2025-08-24 15:51:33.371 +02:00 [INF] Executing endpoint 'HTTP: POST /orders'
+2025-08-24 15:51:33.374 +02:00 [INF] Handling CreateOrderCommandRequest
+2025-08-24 15:51:38.034 +02:00 [INF] Handled CreateOrderCommandRequest
+2025-08-24 15:51:38.035 +02:00 [INF] Setting HTTP status code 201.
+2025-08-24 15:51:38.035 +02:00 [INF] Writing value of type 'CreateOrderResponse' as Json.
+2025-08-24 15:51:38.035 +02:00 [INF] Executed endpoint 'HTTP: POST /orders'
+2025-08-24 15:51:38.036 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7191/orders - 201 null application/json; charset=utf-8 4673.2357ms
+2025-08-24 15:54:31.783 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7191/orders/6C341131-4934-4CF9-8D98-A0BC344F81FB - null null
+2025-08-24 15:54:31.847 +02:00 [INF] Executing endpoint 'HTTP: GET /orders/{orderNumber:guid}'
+2025-08-24 15:54:31.862 +02:00 [INF] Handling GetOrderByIdQueryRequest
+2025-08-24 15:54:36.650 +02:00 [INF] Handled GetOrderByIdQueryRequest
+2025-08-24 15:54:36.650 +02:00 [INF] Setting HTTP status code 200.
+2025-08-24 15:54:36.656 +02:00 [INF] Writing value of type 'OrderResponse' as Json.
+2025-08-24 15:54:36.661 +02:00 [INF] Executed endpoint 'HTTP: GET /orders/{orderNumber:guid}'
+2025-08-24 15:54:36.662 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7191/orders/6C341131-4934-4CF9-8D98-A0BC344F81FB - 200 null application/json; charset=utf-8 4878.5555ms
