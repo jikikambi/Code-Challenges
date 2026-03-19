@@ -5052,11 +5052,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj",
+      "projectUniqueName": "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj",
       "projectName": "CodeChallenge.InfrastructureLayer",
-      "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj",
+      "projectPath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\CodeChallenge.InfrastructureLayer.csproj",
       "packagesPath": "C:\\Users\\jcamb\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\obj\\",
+      "outputPath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.InfrastructureLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5076,13 +5076,14 @@
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
-              "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj"
+            "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
+              "projectPath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj"
             },
-            "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj": {
-              "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj"
+            "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj": {
+              "projectPath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.DomainLayer\\CodeChallenge.DomainLayer.csproj"
             }
           }
         }
@@ -5097,10 +5098,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net9.0": {
+        "framework": "net9.0",
         "targetAlias": "net9.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
@@ -5138,7 +5140,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

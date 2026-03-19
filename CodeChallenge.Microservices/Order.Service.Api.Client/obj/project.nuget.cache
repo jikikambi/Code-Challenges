@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K18yNmBQ9n8=",
+  "dgSpecHash": "AhRh/QfVOWE=",
   "success": true,
-  "projectFilePath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj",
+  "projectFilePath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcamb\\.nuget\\packages\\elasticsearch.net\\7.17.4\\elasticsearch.net.7.17.4.nupkg.sha512",
     "C:\\Users\\jcamb\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",

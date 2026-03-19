@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0cGt50BTktM=",
+  "dgSpecHash": "4STubIWufZU=",
   "success": true,
-  "projectFilePath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\Order.Service.Api.csproj",
+  "projectFilePath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\Order.Service.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jcamb\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\jcamb\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

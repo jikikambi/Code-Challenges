@@ -10862,11 +10862,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\Order.Service.Api.IntegrationTests.csproj",
+      "projectUniqueName": "D:\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\Order.Service.Api.IntegrationTests.csproj",
       "projectName": "Order.Service.Api.IntegrationTests",
-      "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\Order.Service.Api.IntegrationTests.csproj",
+      "projectPath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\Order.Service.Api.IntegrationTests.csproj",
       "packagesPath": "C:\\Users\\jcamb\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\obj\\",
+      "outputPath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10886,19 +10886,20 @@
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
-              "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj"
+            "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj": {
+              "projectPath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.ApplicationLayer\\CodeChallenge.ApplicationLayer.csproj"
             },
-            "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.Shared.IntegrationTests\\CodeChallenge.Shared.IntegrationTests.csproj": {
-              "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.Shared.IntegrationTests\\CodeChallenge.Shared.IntegrationTests.csproj"
+            "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.Shared.IntegrationTests\\CodeChallenge.Shared.IntegrationTests.csproj": {
+              "projectPath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\CodeChallenge.Shared.IntegrationTests\\CodeChallenge.Shared.IntegrationTests.csproj"
             },
-            "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj": {
-              "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj"
+            "D:\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj": {
+              "projectPath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api.Client\\Order.Service.Api.Client.csproj"
             },
-            "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\Order.Service.Api.csproj": {
-              "projectPath": "D:\\dev\\backend\\ddd\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\Order.Service.Api.csproj"
+            "D:\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\Order.Service.Api.csproj": {
+              "projectPath": "D:\\Code-Challenges\\CodeChallenge.Microservices\\Order.Service.Api\\Order.Service.Api.csproj"
             }
           }
         }
@@ -10913,10 +10914,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net9.0": {
+        "framework": "net9.0",
         "targetAlias": "net9.0",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Testing": {
@@ -10972,7 +10974,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
