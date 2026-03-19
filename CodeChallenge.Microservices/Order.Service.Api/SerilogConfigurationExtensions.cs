@@ -30,6 +30,4 @@ public static class SerilogConfigurationExtensions
 
         hostBuilder.UseSerilog();
     }
-
-    public static void Test() { }
 }
