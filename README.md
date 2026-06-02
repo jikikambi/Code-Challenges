@@ -98,13 +98,13 @@ Rebuilds the aggregate from **event history**.
 
 This microservice uses **Elasticsearch** for tracking events and request lifecycles.
 
-### 1️⃣ Pull Elasticsearch Docker image
+### 1️ Pull Elasticsearch Docker image
 
 ```powershell
 docker pull docker.elastic.co/elasticsearch/elasticsearch:8.10.0
 ```
 
-### 2️⃣ Start Elasticsearch container
+### 2️ Start Elasticsearch container
 
 ```powershell
 docker run -d --name elasticsearch-local `
@@ -118,7 +118,7 @@ docker run -d --name elasticsearch-local `
 * HTTP endpoint: `http://localhost:9200`
 * Single-node cluster, no TLS/auth for development.
 
-### 3️⃣ Verify Elasticsearch Container
+### 3️ Verify Elasticsearch Container
 
 ```powershell
 docker ps
@@ -136,7 +136,7 @@ Expected response:
 }
 ```
 
-### 4️⃣ (Optional) Create an Ingest Pipeline
+### 4️ (Optional) Create an Ingest Pipeline
 
 ```powershell
 curl -X PUT "http://localhost:9200/_ingest/pipeline/my-pipeline" -H "Content-Type: application/json" -d'
@@ -148,7 +148,7 @@ curl -X PUT "http://localhost:9200/_ingest/pipeline/my-pipeline" -H "Content-Typ
 }'
 ```
 
-### 5️⃣ Configure TrackingService in .NET
+### 5️ Configure TrackingService in .NET
 
 `appsettings.Development.json`:
 
@@ -172,10 +172,10 @@ Save this as `run-dev.ps1` in the project root:
 ```powershell
 # run-dev.ps1
 
-# 1️⃣ Pull Elasticsearch image
+# 1️ Pull Elasticsearch image
 docker pull docker.elastic.co/elasticsearch/elasticsearch:8.10.0
 
-# 2️⃣ Start Elasticsearch container if not running
+# 2️ Start Elasticsearch container if not running
 $container = docker ps --filter "name=elasticsearch-local" --format "{{.Names}}"
 
 if (-not $container) {
@@ -191,13 +191,13 @@ if (-not $container) {
     Write-Host "Elasticsearch container already running."
 }
 
-# 3️⃣ Run .NET API
+# 3️ Run .NET API
 Write-Host "Running .NET API..."
 Start-Process -NoNewWindow -FilePath "dotnet" -ArgumentList "run --project src/Order.Service.Api"
 
 Start-Sleep -Seconds 10 # give API time to start
 
-# 4️⃣ Push a test order to API
+# 4️ Push a test order to API
 $body = @{
     Items = @(@{
         ProductId = [guid]::NewGuid()
@@ -213,7 +213,7 @@ $body = @{
 Write-Host "Sending test order..."
 Invoke-RestMethod -Uri "http://localhost:7191/orders" -Method POST -Body $body -ContentType "application/json"
 
-# 5️⃣ Query Elasticsearch to verify event
+# 5️ Query Elasticsearch to verify event
 Write-Host "Querying Elasticsearch..."
 $response = Invoke-RestMethod -Uri "http://localhost:9200/tracking-events-$(Get-Date -Format yyyy.MM.dd)/_search?pretty"
 $response.hits.hits | ForEach-Object { $_._source | ConvertTo-Json -Depth 10 }
